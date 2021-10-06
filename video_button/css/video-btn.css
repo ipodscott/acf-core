@@ -1,0 +1,322 @@
+
+.modal-vid{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100vh;
+    z-index:999;
+    display:none;
+}
+.movie-box{
+    top:0px;
+    left:0px;
+    display:table;
+    width:100%;
+    height:100vh;
+    background-color:#232323;
+    background-color:rgba(0, 0, 0, 0.80);
+    color:#fff;
+    text-align:center;
+}
+
+.close.small-close{
+	position:absolute;
+    font-weight:300;
+    letter-spacing:0.125em;
+    text-transform:uppercase;
+    font-size:10px !important;
+    right:0px;
+    top:-15px;
+    color:#fff !important;
+    cursor:pointer;
+    z-index: 9999;
+}
+
+.wide-screen{
+    display:table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.vid-holder{
+    display:inline-block;
+    top:0px;
+    left:0px;
+    position:relative;
+    margin:0 auto;
+    -webkit-box-shadow: 0 0 10px 0 #000000;
+    box-shadow: 0 0 10px 0 #000000;
+    border-style:solid;
+    border-width:1px;
+    border-color:#333;
+    overflow: visible;
+}
+
+
+.standard-img, .widescreen-img, .sixteen-nine, .pal{
+    max-height:calc(100vh - 122px);
+    max-width:calc(100vw - 122px);
+    position:relative;
+    margin:0 auto;
+    /*transition: all 0.5s;*/
+    display:none ;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .standard-img, .widescreen-img, .sixteen-nine, .pal{
+	max-height:calc(100vh - 32px);
+    max-width:calc(100vw - 32px);
+  }
+}
+
+.vid-holder video, .vid-holder iframe{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background-color:#000;
+    background-image:url(https://s3.amazonaws.com/imglibs/video_bg.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+
+
+.page-vid-link{
+    display: flex;
+    margin: 0 auto 1.25em auto;
+    align-items: center;
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #333;
+    background-color: #000;
+    text-transform: uppercase;
+    font-size: 10px;
+    height: 40px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    width: 100%;
+    clear: both;
+    transition: all 0.5s;
+    padding: 3px 15px 4px 15px;
+    color: #ccc;
+	transition: all 0.5s;
+}
+
+.page-vid-link:hover{
+	background-color: #151515;
+}
+
+.page-vid-link .material-icons{
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    margin-right: 8px;
+    top: 0;
+}
+
+.image-vid-link{
+	display: block;
+	position: relative;
+	width: calc(100%);
+	cursor: pointer;
+	transition: all 0.5s;
+	margin-bottom: 10px;
+	cursor: url(/images/movie.png) 15 15, move;
+}
+
+
+.video-gallery .image-vid-link{
+	width: calc(50% - 5px);
+	cursor: pointer;
+	transition: all 0.5s;
+	margin-bottom: 10px;
+	cursor: url(/images/movie.png) 15 15, move;
+}
+
+
+@media only screen and (max-width: 998px) {
+  .video-gallery .image-vid-link{
+		width: calc(100%);
+		margin-bottom: 10px;
+	}
+}
+
+
+.image-vid-link .vid-btn-img{
+	width: 100%;
+	height: auto;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.image-vid-link:hover .vid-title{
+	background-color: rgba(255, 255, 255, 0.5);
+	color: #000;
+}
+
+.image-vid-link .play-icon{
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 36px;
+	height: 36px;
+}
+
+
+.vid-title{
+	transition: all 0.5s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	color: #fff;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-transform: uppercase;
+}
+
+
+img.vid-btn-img{
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+	cursor: pointer;
+	transition: all 0.5s;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+}
+
+.vid-play-btn{
+	width: 25%;
+	height: auto;
+	box-shadow: 0px 0px 10px black;
+	border-radius: 50%;
+	fill:#ffffff;
+	transition: all 0.5s;
+	opacity: 1;
+}
+
+.vid-title:hover .vid-play-btn{
+	fill: #000000;
+	width: calc(25% + 10px);
+	opacity: 0.6;
+}
+.video-btn{
+    display: flex;
+    margin: 0 auto 1.25em auto;
+    align-items: center;
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #333;
+    background-color: #000;
+    text-transform: uppercase;
+    font-size: 10px;
+    height: 40px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    width: 100%;
+    clear: both;
+    transition: all 0.5s;
+    padding: 3px 15px 4px 15px;
+    color: #ccc;
+    box-shadow: none;
+    }
+    
+    
+.vid-main-content {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.movie-box {
+    top: 0;
+    left: 0;
+    display: table;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+}
+.movie {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.vid-box {
+    position: relative;
+    text-align: center;
+    display: none;
+}
+.vid-box img {
+    max-height: calc(100vh - 90px);
+    max-width: calc(100vw - 90px);
+    position: relative;
+    margin: 0 auto;
+    display: block;
+}
+.vid-holder {
+    display: inline-block;
+    top: 0;
+    left: 0;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.63);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #333 !important;
+    max-width: calc(100%);
+    background-image: url(../img/eclipse.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-size: 120px 120px;
+}
+.vid-holder img {
+    display: none;
+}
+.vid-holder img.show {
+    display: block;
+}
+.wistia_embed,
+iframe,
+video {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+    outline: 0 !important;
+}
+.wistia_responsive_wrapper {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.myVideo {
+    display: none;
+}
+

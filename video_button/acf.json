@@ -1,0 +1,356 @@
+[
+    {
+        "key": "group_6066067539dc8",
+        "title": "Modal Video Button",
+        "fields": [
+            {
+                "key": "field_60660860a79e5",
+                "label": "Modal Video Button",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "gberg-label hide-sidebar",
+                    "id": ""
+                },
+                "message": "",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_606606753de20",
+                "label": "Video Settings",
+                "name": "",
+                "type": "accordion",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "open": 0,
+                "multi_expand": 0,
+                "endpoint": 0
+            },
+            {
+                "key": "field_613b95fba846e",
+                "label": "Button Type",
+                "name": "button_type",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "text": "Text",
+                    "image": "Image"
+                },
+                "default_value": false,
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_613b9659a846f",
+                "label": "Thumb",
+                "name": "thumb",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_613b95fba846e",
+                            "operator": "==",
+                            "value": "image"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_6066082aa79e4",
+                "label": "Button Title",
+                "name": "button_title",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_606606753de5f",
+                "label": "Select Video Source",
+                "name": "select_video_source",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "remote_mp4": "Remote Mp4",
+                    "youtube": "YouTube",
+                    "mp4_upload": "MP4 Upload",
+                    "vimeo": "Vimeo",
+                    "wistia": "Wistia",
+                    "pbs_player": "PBS Player"
+                },
+                "default_value": false,
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 1,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_606606753de9b",
+                "label": "Resolution",
+                "name": "resolution",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "standard-btn": "Standard",
+                    "sixteen-nine-btn": "16x9",
+                    "widescreen-btn": "Widescreen",
+                    "pano-btn": "Panovision",
+                    "pal-btn": "PAL",
+                    "na-btn": "National Archive",
+                    "vintage-wide-btn": "Vintage Wide"
+                },
+                "default_value": false,
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_606606753ded6",
+                "label": "YouTube Id",
+                "name": "youtube_id",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_606606753de5f",
+                            "operator": "==",
+                            "value": "youtube"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_606606753df11",
+                "label": "Vimeo ID",
+                "name": "vimeo_id",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_606606753de5f",
+                            "operator": "==",
+                            "value": "vimeo"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_606606753df4c",
+                "label": "Wistia ID",
+                "name": "wistia_id",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_606606753de5f",
+                            "operator": "==",
+                            "value": "wistia"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_606606753df87",
+                "label": "MP4 Upload",
+                "name": "mp4_upload",
+                "type": "file",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_606606753de5f",
+                            "operator": "==",
+                            "value": "mp4_upload"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_size": "",
+                "max_size": "",
+                "mime_types": "mp4, m4v, MP4, M4V"
+            },
+            {
+                "key": "field_606606753dfc1",
+                "label": "Remote MP4",
+                "name": "remote_mp4",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_606606753de5f",
+                            "operator": "==",
+                            "value": "remote_mp4"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_606606753dffc",
+                "label": "PBS Player",
+                "name": "pbs_player_url",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_606606753de5f",
+                            "operator": "==",
+                            "value": "pbs_player"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/video-button"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

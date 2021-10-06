@@ -1,0 +1,140 @@
+[
+    {
+        "key": "group_605756a992b88",
+        "title": "Audio Button",
+        "fields": [
+            {
+                "key": "field_6064cf8c9af48",
+                "label": "Audio Button",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "gberg-label hide-sidebar",
+                    "id": ""
+                },
+                "message": "",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_60575a1cba803",
+                "label": "Title",
+                "name": "title",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_605757d0274c8",
+                "label": "Audio Source",
+                "name": "audio_source",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "upload": "Upload",
+                    "remote": "Remote"
+                },
+                "default_value": false,
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_6057591a383e9",
+                "label": "Upload",
+                "name": "upload",
+                "type": "file",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_605757d0274c8",
+                            "operator": "==",
+                            "value": "upload"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_size": "",
+                "max_size": "",
+                "mime_types": "mp3, m4a, ogg"
+            },
+            {
+                "key": "field_60575949383ea",
+                "label": "File URL",
+                "name": "file_url",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_605757d0274c8",
+                            "operator": "==",
+                            "value": "remote"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/audio-button"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

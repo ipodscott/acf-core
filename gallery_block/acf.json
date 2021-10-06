@@ -1,0 +1,105 @@
+[
+    {
+        "key": "group_6064fd1bf0b1d",
+        "title": "Gallery Block",
+        "fields": [
+            {
+                "key": "field_6064fd39fec96",
+                "label": "Gallery Block",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "gberg-label",
+                    "id": ""
+                },
+                "message": "",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_6064fd6eac5a4",
+                "label": "Gallery Content",
+                "name": "",
+                "type": "accordion",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "open": 0,
+                "multi_expand": 0,
+                "endpoint": 0
+            },
+            {
+                "key": "field_6067b353a28f8",
+                "label": "Gallery Name",
+                "name": "gallery_name",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6064fd81ac5a5",
+                "label": "Gallery",
+                "name": "gallery",
+                "type": "gallery",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "insert": "append",
+                "library": "all",
+                "min": "",
+                "max": "",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/gallery-block"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]
