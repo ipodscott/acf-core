@@ -320,3 +320,13 @@ video {
     display: none;
 }
 
+
+.video-btn-img-title{
+	display: block;
+	position: relative;
+	text-align: center;
+	padding-top: 0;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
