@@ -10,3 +10,5 @@ This is a self contained plugin that works with Advanced Custom Fields Pro. If A
 - Video Button - Modal video player that supports remote and uploaded mp4, youtube, wistia, and vimeo.
 
 Each module is completely self contained and includes it own JS and CSS dependencies.
+
+**This was originally built as part of a theme and I'm in the process of converting it to a plugin so there is some optimization and fixes that I'm in the process of adding.**
