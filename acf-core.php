@@ -10,14 +10,6 @@ Author URI: https://scottsaunders.design
 License: GPLv2 or later
 Text Domain: scottsaunders.design
 */
-
-function prefix_add_acf_footer_styles() {
-	
-	wp_enqueue_style( 'acf_styles', plugins_url( 'css/acf-blocks.css', __FILE__ ) );
-
-};
-add_action( 'get_footer', 'prefix_add_acf_footer_styles' );
-
 	
 	add_action('acf/init', 'my_acf_init');
 		function my_acf_init() {

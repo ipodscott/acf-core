@@ -24,7 +24,7 @@ function add_audio_layer(){
 	wp_enqueue_style( 'audio_css', plugin_dir_url( __FILE__ ). 'css/plyr.css',true,'1.1','all');
 	wp_enqueue_style( 'audio_mods_css', plugin_dir_url( __FILE__ ). 'css/plyr_mods.css',true,'1.1','all');
 	wp_enqueue_script( 'plyr_js', plugin_dir_url( __FILE__ ). 'js/plyr.js', array('jquery'), '1.0', true );
-	require_once( plugin_dir_path( __FILE__ ) . '/audio_layer.php');
+	require_once( plugin_dir_path( __FILE__ ) . 'audio_layer.php');
 };
 
 // Read local acf.json

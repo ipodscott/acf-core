@@ -39,7 +39,7 @@ if( $images ): ?>
    <div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
         <?php foreach( $images as $image ): ?>
 			<a data-fancybox="<?php echo $gallery_name; ?>" href="<?php echo esc_url($image['url']); ?>">
-				<img data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+				<img src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 			</a>
         <?php endforeach; ?>
    </div>

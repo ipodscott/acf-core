@@ -18,11 +18,6 @@ $classes = [''];
 
 ?>
 
-
-<div data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" class="<?php echo '' . join( ' ', $classes ) . ''; ?>" name="<?php echo $anchor; ?>">
-    <div class="main-container">
-	    <div class="row">
-        	<?php echo '<InnerBlocks />';?>
-	    </div>
-	</div>
+<div class="<?php echo '' . join( ' ', $classes ) . ''; ?>" name="<?php echo $anchor; ?>">
+	<?php echo '<InnerBlocks />';?>
 </div>
