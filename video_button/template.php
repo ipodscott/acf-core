@@ -82,7 +82,7 @@
 	
 <?php  elseif( $button_type == 'text' ): ?>
 	
-	<span  data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" class="video-btn <?php echo esc_attr($className); ?> <?php echo $vid_source; ?> <?php echo $resolution; ?>" vidURL="<?php echo $vid_origin; ?>">
+	<span class="video-btn <?php echo esc_attr($className); ?> <?php echo $vid_source; ?> <?php echo $resolution; ?>" vidURL="<?php echo $vid_origin; ?>">
 		<i class="material-icons">video_label</i> <span><?php echo $button_title; ?></span>
 	</span>
 	

@@ -17,8 +17,14 @@ $( document ).ready(function() {
         $(".video-menu li").removeClass("show");
         $(this).addClass("show")
     });	
+    
+    $(".image-vid-btn").click(function() {
+       $('.play_audio.active, .list-group-item.active').removeClass('active');
+	   $("#audio")[0].pause();
+	   $('.audio_footer').removeClass('show'); 
+    });	
 	
-	
+
 	$( ".tube-link" ).click(function() {
 		$('body').addClass('stop-scroll');
 		$('.vidFrame').attr("src", $(this).attr("vidUrl"));
@@ -57,7 +63,6 @@ $( document ).ready(function() {
         $('.audio_footer.show, .mini-audio-btn.show').removeClass("show");
         document.getElementById('audio').pause();
 	}
-    
 
     
 	$(".sixteen-nine-btn").click(function() {
