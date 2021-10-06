@@ -109,20 +109,7 @@ $( document ).ready(function() {
 		$("#audio")[0].pause();
 		$('.audio_footer, .mini-audio-btn').removeClass('show');
 		$('body').addClass('stop-scroll');
-	});
-	
-	var myVideo = document.getElementById('creditsVid');
-	if (typeof myVideo.loop == 'boolean') { // loop supported
-	  myVideo.loop = true;
-	} else { // loop property not supported
-	  myVideo.addEventListener('ended', function () {
-	    this.currentTime = 0;
-	    this.play();
-	  }, false);
-	}
-	//...
-	myVideo.play();
-		
+	});		
     
 });
 
