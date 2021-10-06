@@ -100,6 +100,12 @@ $( document ).ready(function() {
         $(".vid-holder img").removeClass("show");
         $(".vintage-wide").addClass("show");
     });
+	
+	$(".pano-btn").click(function() {
+        $(".modal-vid").fadeIn(500);
+        $(".vid-holder img").removeClass("show");
+        $(".panovision").addClass("show");
+    });
 
     
     $(".close").click(function() { 

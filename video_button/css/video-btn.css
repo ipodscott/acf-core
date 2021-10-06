@@ -26,8 +26,8 @@
     letter-spacing:0.125em;
     text-transform:uppercase;
     font-size:10px !important;
-    right:0px;
-    top:-15px;
+    right:-8px;
+    top:-10px;
     color:#fff !important;
     cursor:pointer;
     z-index: 9999;
@@ -53,10 +53,20 @@
     overflow: visible;
 }
 
+.vid-holder svg{
+	width: 24px;
+	height: 24px;
+	opacity: 0.6;
+	transition:all 0.5s;
+}
 
-.standard-img, .widescreen-img, .sixteen-nine, .pal{
-    max-height:calc(100vh - 122px);
-    max-width:calc(100vw - 122px);
+.vid-holder svg:hover{
+	opacity: 1;
+}
+
+.vid-holder img{
+    max-height:calc(100vh - 62px);
+    max-width:calc(100vw - 62px);
     position:relative;
     margin:0 auto;
     /*transition: all 0.5s;*/
@@ -65,7 +75,7 @@
 
 
 @media only screen and (max-width: 600px) {
-  .standard-img, .widescreen-img, .sixteen-nine, .pal{
+  .vid-holder img{
 	max-height:calc(100vh - 32px);
     max-width:calc(100vw - 32px);
   }
