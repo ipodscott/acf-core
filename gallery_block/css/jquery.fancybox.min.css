@@ -21,11 +21,22 @@ body.compensate-for-scrollbar{overflow:hidden}.fancybox-active{height:auto}.fanc
 	z-index: 9999999 !important;
 }
 
-.gallery-block{
+.gallery.gallery-block{
 	margin-bottom: 20px;
 	display: flex;
+	position: relative;
+	width: 100%;
 	flex-wrap: wrap;
 	justify-content: center;
+}
+
+.wp-core-ui .button-primary{
+	min-width: 110px;
+	text-align: center;
+}
+
+.acf-gallery-sort{
+	min-width: 185px;
 }
 
 .gallery-block a{
