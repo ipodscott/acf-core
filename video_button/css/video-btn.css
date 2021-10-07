@@ -121,12 +121,14 @@
 	background-color: #151515;
 }
 
-.page-vid-link .material-icons{
+.page-vid-link svg{
     display: inline-block;
     position: relative;
-    font-size: 16px;
+	width: 24px;
+	height: 24px;
     margin-right: 8px;
     top: 0;
+    fill:#ccc;
 }
 
 .image-vid-link{

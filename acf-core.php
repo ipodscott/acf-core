@@ -39,6 +39,9 @@ function my_block_category( $categories, $post ) {
 			),
 		)
 	);
+	
+	  array_unshift( $categories );
+  return $categories;
 }
 add_filter( 'block_categories', 'my_block_category',  3, 2);
 

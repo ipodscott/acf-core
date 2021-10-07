@@ -83,7 +83,7 @@
 <?php  elseif( $button_type == 'text' ): ?>
 	
 	<span class="video-btn <?php echo esc_attr($className); ?> <?php echo $vid_source; ?> <?php echo $resolution; ?>" vidURL="<?php echo $vid_origin; ?>">
-		<i class="material-icons">video_label</i> <span><?php echo $button_title; ?></span>
+		<svg><path d="M21,3H3C1.9,3,1,3.9,1,5v14c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2V5C23,3.9,22.1,3,21,3z M21,16H3V5h18V16z"/></svg> <span><?php echo $button_title; ?></span>
 	</span>
 	
 <?php  else: ?>

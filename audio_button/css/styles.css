@@ -28,10 +28,11 @@
 	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-.audio-btn .material-icons{
+.audio-btn svg{
 	display: inline-block;
 	position: relative;
-    font-size: 16px;
+    width: 24px;
+    height: 24px;
     margin-right: 5px;
-    top: 0;
+   fill: #ccc;
 }
