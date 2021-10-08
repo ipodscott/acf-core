@@ -17,6 +17,7 @@
 add_action('wp_footer', 'add_large_slider_layer');
 function add_large_slider_layer(){
 	wp_enqueue_script( 'lg_slider_js', plugin_dir_url( __FILE__ ). 'js/lg_slider.js', array('jquery'), '1.0', true );
+	wp_enqueue_style( 'slider_mods_styles', plugin_dir_url( __FILE__ ). 'css/swiper_mods.css', true );
 };
 
 

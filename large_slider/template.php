@@ -8,7 +8,7 @@
 $id = $block['id'];
 ?>
 
-	<div data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" class="big-slider featured-swiper-container">
+	<div class="big-slider featured-swiper-container">
 	    <div class="swiper-wrapper">
 		    
 		    
@@ -54,17 +54,10 @@ $id = $block['id'];
 				
 	<?php endif; ?>
 <?php endwhile; ?>
-		    
-		    
-		    
-		    		
-		    
-			
 			
     </div>
-    <!-- Add Pagination -->
-    <div class="progress-swiper-pagination"></div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    
+	<div class="next-slide"><div class="swiper-button-next"></div></div>
+    <div class="prev-slide"><div class="swiper-button-prev"></div></div>
   </div>
+  
