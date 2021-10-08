@@ -61,10 +61,6 @@
 	display: block;
 }
 
-.acc-body p{
-	color: #999;
-}
-
 .acc-body p:last-child{
 	margin-bottom: 0;
 }
