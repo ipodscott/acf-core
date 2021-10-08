@@ -20,6 +20,11 @@ function add_large_slider_layer(){
 	wp_enqueue_style( 'slider_mods_styles', plugin_dir_url( __FILE__ ). 'css/swiper_mods.css', true );
 };
 
+function slider_preview() {
+    wp_enqueue_script( 'lg_slider_js', plugin_dir_url( __FILE__ ). 'js/lg_slider.js', array('jquery'), '1.0', true );
+	wp_enqueue_style( 'slider_mods_styles', plugin_dir_url( __FILE__ ). 'css/swiper_mods.css', true );
+}
+add_action('admin_footer', 'slider_preview');
 
 // Read local acf.json
 $acf_json_data = ( plugin_dir_path( __FILE__ ) . 'acf.json' );
