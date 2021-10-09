@@ -21,7 +21,7 @@
     box-shadow: none;
 }
 
-.play_audio svg{
+.play_audio.audio-btn svg{
     display: inline-block;
     position: relative;
 	width: 18px;

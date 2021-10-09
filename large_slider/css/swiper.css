@@ -5,6 +5,8 @@
 
 .big-slider{
 	margin-bottom: 40px;
+	max-width: 100vw;
+	overflow: hidden;
 }
 
 .swiper-wrapper{
