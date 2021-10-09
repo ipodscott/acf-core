@@ -19,6 +19,7 @@ Text Domain: scottsaunders.design
 				include_once 'accordion/module.php';
 				include_once 'audio_button/module.php';
 				include_once 'gallery_block/module.php';
+				include_once 'large_slider/module.php';
 				include_once 'preso_preview/module.php';
 				include_once 'primary_content_block/module.php';
 				include_once 'video_button/module.php';

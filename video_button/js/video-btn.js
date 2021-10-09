@@ -21,6 +21,7 @@ $( document ).ready(function() {
     $(".image-vid-btn").click(function() {
        $('.play_audio.active, .list-group-item.active').removeClass('active');
 	   $("#audio")[0].pause();
+	   $('.image-audio-btn.active').removeClass('active');
 	   $('.audio_footer').removeClass('show'); 
     });	
 	

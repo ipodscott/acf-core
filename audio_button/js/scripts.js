@@ -15,6 +15,7 @@ const player = new Plyr('#audio');
 	 
 	  $( ".play_audio" ).click(function() {
 		  $('.play_audio.active, .list-group-item.active').removeClass('active');
+		  $('.image-audio-btn.active').removeClass('active');
 		  $(this).addClass('active');
 		showaudio();
 		hidemini();
@@ -37,8 +38,15 @@ const player = new Plyr('#audio');
 	
 	$( ".close-player" ).click(function() {
 		$('.play_audio.active, .list-group-item.active').removeClass('active');
-	$("#audio")[0].pause();
-	  $('.audio_footer').removeClass('show');
+		$('.image-audio-btn.active').removeClass('active');
+		$("#audio")[0].pause();
+		$('.audio_footer').removeClass('show');
+	});
+	
+	
+	$( ".image-audio-btn" ).click(function() {
+			$('.image-audio-btn.active').removeClass('active');
+		 $(this).addClass('active');
 	});
 	
 });
