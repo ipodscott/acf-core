@@ -46,7 +46,7 @@
 <div class="image-audio-btn play_audio" audiourl="<?php echo $audio; ?>">
 	    <div class="image-audio-link">
         <img class="audio-btn-img" style="background-image: url('<?php echo esc_url($thumb); ?>')"  src="<?php echo plugin_dir_url( __FILE__ ); ?>images/audio_thumb.gif"/>
-        <div class="vid-title"><svg class="vid-play-btn" viewBox="0 0 24 24"> <path d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M9.8,7.7c0-1.2,1-2.2,2.2-2.2 c1.2,0,2.2,1,2.2,2.2V12c0,1.2-1,2.2-2.2,2.2c-1.2,0-2.2-1-2.2-2.2V7.7z M12.7,17v2.2h-1.4V17c-2.5-0.4-4.3-2.5-4.3-5h1.4 c0,2,1.6,3.6,3.6,3.6c2,0,3.6-1.6,3.6-3.6h1.4C17.1,14.6,15.2,16.7,12.7,17z"/> </svg>
+        <div class="audio-title"><svg class="audio-play-btn" viewBox="0 0 24 24"> <path d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M9.8,7.7c0-1.2,1-2.2,2.2-2.2 c1.2,0,2.2,1,2.2,2.2V12c0,1.2-1,2.2-2.2,2.2c-1.2,0-2.2-1-2.2-2.2V7.7z M12.7,17v2.2h-1.4V17c-2.5-0.4-4.3-2.5-4.3-5h1.4 c0,2,1.6,3.6,3.6,3.6c2,0,3.6-1.6,3.6-3.6h1.4C17.1,14.6,15.2,16.7,12.7,17z"/> </svg>
 </div>
 		</div>
 		<div class="video-btn-img-title"><?php echo $title; ?></div>
