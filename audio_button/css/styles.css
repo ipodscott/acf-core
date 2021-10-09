@@ -21,6 +21,15 @@
     box-shadow: none;
 }
 
+.play_audio svg{
+    display: inline-block;
+    position: relative;
+	width: 18px;
+	height: 18px;
+    margin-right: 8px;
+    top: 0;
+    fill:#ccc;
+}
 
 .audio-btn.active{
 	background-color: #75000d;
