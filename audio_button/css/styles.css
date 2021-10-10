@@ -6,19 +6,22 @@
     border-style:solid;
     border-width:1px;
     border-color:#333;
-    background-color:#000;
+    background-color:#efefef;
     text-transform:uppercase;
     font-size:10px;
     height: 40px;
-    font-weight:700;
     letter-spacing:0.1em;
     cursor:pointer;
 	width: 100%;
     clear: both;
     transition: all 0.5s;
     padding: 3px 15px 4px 15px;
-    color: #ccc;
+    color: #000;
     box-shadow: none;
+}
+
+.audio-btn:hover{
+	background-color: #fff;
 }
 
 .play_audio.audio-btn svg{
@@ -28,13 +31,12 @@
 	height: 18px;
     margin-right: 8px;
     top: 0;
-    fill:#ccc;
+    fill:#333;
 }
 
 .audio-btn.active{
-	background-color: #75000d;
-	color: #fff;
-	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+	background-color: #fff;
+	color: #000;
 }
 
 .audio-play-btn {

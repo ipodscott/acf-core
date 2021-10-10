@@ -106,7 +106,6 @@
     text-transform: uppercase;
     font-size: 10px;
     height: 40px;
-    font-weight: 700;
     letter-spacing: 0.1em;
     cursor: pointer;
     width: 100%;
@@ -118,7 +117,7 @@
 }
 
 .page-vid-link:hover{
-	background-color: #151515;
+	background-color: #fff;
 }
 
 .page-vid-link svg{
@@ -128,7 +127,7 @@
 	height: 18px;
     margin-right: 8px;
     top: 0;
-    fill:#ccc;
+    fill:#000;
 }
 
 .image-vid-link{
@@ -242,18 +241,17 @@ img.vid-btn-img{
     border-style: solid;
     border-width: 1px;
     border-color: #333;
-    background-color: #000;
+    background-color: #efefef;
     text-transform: uppercase;
     font-size: 10px;
     height: 40px;
-    font-weight: 700;
     letter-spacing: 0.1em;
     cursor: pointer;
     width: 100%;
     clear: both;
     transition: all 0.5s;
     padding: 3px 15px 4px 15px;
-    color: #ccc;
+    color: #000;
     box-shadow: none;
     }
     
