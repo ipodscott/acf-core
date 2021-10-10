@@ -142,6 +142,8 @@
 
 .video-gallery{
 	display: flex;
+	position: relative;
+	width: 100%;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
