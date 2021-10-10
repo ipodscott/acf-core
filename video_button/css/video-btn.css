@@ -113,6 +113,7 @@
     transition: all 0.5s;
     padding: 3px 15px 4px 15px;
     color: #ccc;
+    line-height: 1.1em;
 	transition: all 0.5s;
 }
 
@@ -253,6 +254,7 @@ img.vid-btn-img{
     padding: 3px 15px 4px 15px;
     color: #000;
     box-shadow: none;
+    line-height: 1.1em;
     }
     
     
@@ -306,7 +308,6 @@ img.vid-btn-img{
     border-width: 1px;
     border-color: #333 !important;
     max-width: calc(100%);
-    background-image: url(../img/eclipse.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-color: #000;
