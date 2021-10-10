@@ -95,6 +95,7 @@ img.audio-btn-img {
 	height: 32px;
 	fill:#fff;
 	opacity: 1;
+	box-shadow: none;
 }
 
 .audio-title {

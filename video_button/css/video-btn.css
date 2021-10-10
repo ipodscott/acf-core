@@ -140,18 +140,27 @@
 	margin-bottom: 10px;
 }
 
+.video-gallery{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 
-.video-gallery .image-vid-link{
+
+.video-gallery .image-vid-btn{
 	width: calc(50% - 5px);
 	cursor: pointer;
 	transition: all 0.5s;
 	margin-bottom: 10px;
-	cursor: url(/images/movie.png) 15 15, move;
+}
+
+.video-gallery .image-vid-btn:nth-last-child(1):nth-child(odd){
+
 }
 
 
 @media only screen and (max-width: 998px) {
-  .video-gallery .image-vid-link{
+  .video-gallery .image-vid-btn{
 		width: calc(100%);
 		margin-bottom: 10px;
 	}

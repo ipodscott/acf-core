@@ -1,4 +1,4 @@
-<div style="none" class="modal-vid">
+<div style="display:none" class="modal-vid">
     <div class="movie-box">
         <div class="wide-screen">
             <div class="vid-holder">
