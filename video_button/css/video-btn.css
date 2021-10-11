@@ -156,6 +156,10 @@
 	margin-bottom: 10px;
 }
 
+.image-vid-btn.no-title {
+	margin-bottom: 30px;
+}
+
 .video-gallery .image-vid-btn:nth-last-child(1):nth-child(odd){
 
 }
