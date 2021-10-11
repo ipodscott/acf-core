@@ -15,10 +15,11 @@ Text Domain: scottsaunders.design
 	add_action('acf/init', 'my_acf_init');
 	
 		function my_acf_init() {
-		
-		//Add ACF Options
-		include_once('block_settings.php');
 			
+			//Add ACF Options
+			include_once('block_settings.php');
+			
+			include_once 'primary_content_block/module.php';
 			
 			// check function exists
 			if( function_exists('acf_register_block') ) {				
