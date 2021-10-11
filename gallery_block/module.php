@@ -5,7 +5,7 @@
 	'title'				=> __('Gallery Block'),
 	'description'		=> __('Block for gallery slideshow'),
 	'render_template' => plugin_dir_path( __FILE__ ) . 'template.php',
-	'category'			=> 'custom-blocks',
+	'category'			=> 'acf-core-blocks',
 	'icon'				=> 'format-gallery',
 	'keywords'			=> array( 'columns' ),
 	'enqueue_style'     =>  plugin_dir_url( __FILE__ ). 'css/jquery.fancybox.min.css',

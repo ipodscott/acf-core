@@ -6,7 +6,7 @@
 	'description'		=> __('Block for previewing presentations. Requires slides based presentations directory.'),
 	'render_template'   => plugin_dir_path( __FILE__ ) . 'template.php',
 	'mode'              => 'auto',
-	'category'			=> 'custom-blocks',
+	'category'			=> 'acf-core-blocks',
 	'icon'				=> '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve"> 
 	<path d="M21.4,1.6H2.6c-1.2,0-2.1,0.9-2.1,2.1v12.5c0,1.1,0.9,2.1,2.1,2.1h7.3v2.1H7.8v2.1h8.3v-2.1h-2v-2.1h1.8h5.5
