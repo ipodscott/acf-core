@@ -20,6 +20,22 @@
                 "new_lines": "wpautop",
                 "esc_html": 0
             },
+             {
+                "key": "field_main_content_tab",
+                "label": "Main Content",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
             {
                 "key": "field_613b95fba846e",
                 "label": "Button Type",
@@ -306,6 +322,41 @@
                         }
                     ]
                 ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_ixnay",
+                "label": "Attributes",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_attributes",
+                "label": "Attributes",
+                "name": "attributes",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
                 "wrapper": {
                     "width": "",
                     "class": "",

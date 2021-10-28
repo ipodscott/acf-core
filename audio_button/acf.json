@@ -21,6 +21,22 @@
                 "esc_html": 0
             },
             {
+                "key": "field_main_content_tab",
+                "label": "Main Content",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
                 "key": "field_6160c51f169dc",
                 "label": "Button Type",
                 "name": "button_type",
@@ -166,6 +182,41 @@
                 ],
                 "wrapper": {
                     "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_ixnay",
+                "label": "Attributes",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_attributes",
+                "label": "Attributes",
+                "name": "attributes",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
                     "class": "",
                     "id": ""
                 },

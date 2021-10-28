@@ -23,6 +23,22 @@
                 "maxlength": ""
             },
             {
+                "key": "field_main_content_tab",
+                "label": "Main Content",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
                 "key": "field_614ffa22baba1",
                 "label": "Active",
                 "name": "active",
@@ -40,6 +56,41 @@
                 "ui": 1,
                 "ui_on_text": "",
                 "ui_off_text": ""
+            },
+            {
+                "key": "field_ixnay",
+                "label": "Attributes",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_attributes",
+                "label": "Attributes",
+                "name": "attributes",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
             }
         ],
         "location": [

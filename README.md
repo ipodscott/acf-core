@@ -1,6 +1,6 @@
-# ACF Core plug-in
+# ACF Core plug in
 
-This is a self contained plugin that works with Advanced Custom Fields Pro. If ACF is installed this will add additional Gutenberg Blocks as well as letting users add, remove, or modify preexisting blocks.
+This is a self contained plugin that works with Advanced Custom Fields Pro. If ACF is installed this will add additional Gutenberg Blocks
 
 - Primary Content Block: A collapsable block that can be use to help manage any content. Helps with pages that are particularly long.
 - Accordion: A basic accordion with an component that the user add any kind of additional block

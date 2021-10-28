@@ -1,11 +1,11 @@
 [
     {
-        "key": "group_613e089aa2550",
-        "title": "Presentation Preview",
+        "key": "group_616b66da4d2c3",
+        "title": "Vertical Slideshow",
         "fields": [
             {
-                "key": "field_613e0db4edb06",
-                "label": "Presentation Preview",
+                "key": "field_616b67f47f8c5",
+                "label": "Vertical Slide",
                 "name": "",
                 "type": "message",
                 "instructions": "",
@@ -13,7 +13,7 @@
                 "conditional_logic": 0,
                 "wrapper": {
                     "width": "",
-                    "class": "gberg-label hide-sidebar",
+                    "class": "gberg-label",
                     "id": ""
                 },
                 "message": "",
@@ -21,39 +21,15 @@
                 "esc_html": 0
             },
             {
-                "key": "field_613e0a0fa2e5d",
-                "label": "Image",
-                "name": "image",
-                "type": "image",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "return_format": "array",
-                "preview_size": "medium",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": ""
-            },
-            {
-                "key": "field_613e0a2ca2e5e",
-                "label": "URL",
-                "name": "url",
+                "key": "field_616b7da236726",
+                "label": "Slide Name",
+                "name": "slide_name",
                 "type": "text",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
-                    "width": "",
+                    "width": "33.333",
                     "class": "",
                     "id": ""
                 },
@@ -64,15 +40,15 @@
                 "maxlength": ""
             },
             {
-                "key": "field_6140a7e4ea8dd",
-                "label": "Download Link",
-                "name": "mobile_download_link",
+                "key": "field_616b7dba36727",
+                "label": "Slide Id",
+                "name": "slide_id",
                 "type": "text",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
-                    "width": "",
+                    "width": "33.333",
                     "class": "",
                     "id": ""
                 },
@@ -81,6 +57,25 @@
                 "prepend": "",
                 "append": "",
                 "maxlength": ""
+            },
+            {
+                "key": "field_616b7dc836728",
+                "label": "Active",
+                "name": "active",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.333",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 1,
+                "ui_on_text": "",
+                "ui_off_text": ""
             }
         ],
         "location": [
@@ -88,7 +83,7 @@
                 {
                     "param": "block",
                     "operator": "==",
-                    "value": "acf\/presentation-preview"
+                    "value": "acf\/vertical-slideshow"
                 }
             ]
         ],

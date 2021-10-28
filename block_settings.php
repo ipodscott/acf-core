@@ -4,11 +4,11 @@
 		
 		acf_add_local_field_group(array(
 			'key' => 'group_616426525ec81',
-			'title' => 'ACF Core Settings',
+			'title' => 'ACFCore Block Manager',
 			'fields' => array(
 				array(
 					'key' => 'field_616426650a4a0',
-					'label' => 'Core Modules',
+					'label' => 'ACFCore Modules',
 					'name' => 'core_modules',
 					'type' => 'repeater',
 					'instructions' => '',
@@ -19,7 +19,7 @@
 						'class' => '',
 						'id' => '',
 					),
-					'collapsed' => '',
+					'collapsed' => 'field_6164267c0a4a1',
 					'min' => 0,
 					'max' => 0,
 					'layout' => 'block',

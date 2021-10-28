@@ -31,6 +31,7 @@
 	$vimeo_id = get_field('vimeo_id');
 	$wistia_id = get_field('wistia_id');
 	$pbs_player_url = get_field('pbs_player_url');
+	$attributes = get_field ( 'attributes' );
 	
 	$image = get_field('thumb');
    	if( $image ):
@@ -71,7 +72,7 @@
 
 <?php if($button_type == 'image') : ?>
 
-<div class="image-vid-btn <?php if( empty ( $button_title ) ): ?> no-title <?php endif; ?>">
+<div class="image-vid-btn <?php if( empty ( $button_title ) ): ?> no-title <?php endif; ?>" <?php echo $attributes; ?>>
 	    <div class="image-vid-link  <?php echo $vid_source; ?> <?php echo $resolution; ?>" vidurl="<?php echo $vid_origin; ?>" >
         <img class="vid-btn-img" style="background-image: url('<?php echo esc_url($thumb); ?>')"  src="<?php echo plugin_dir_url( __FILE__ ); ?>images/video_thumb.gif"/>
         <div class="vid-title"><svg class="vid-play-btn" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><g><rect fill="none" height="24" width="24"/></g><g><path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M9.5,16.5v-9l7,4.5L9.5,16.5z"/></g></svg></div>
@@ -83,7 +84,7 @@
 	
 <?php  elseif( $button_type == 'text' ): ?>
 	
-	<span class="video-btn <?php echo esc_attr($className); ?> <?php echo $vid_source; ?> <?php echo $resolution; ?>" vidURL="<?php echo $vid_origin; ?>">
+	<span class="video-btn <?php echo esc_attr($className); ?> <?php echo $vid_source; ?> <?php echo $resolution; ?>" vidURL="<?php echo $vid_origin; ?>" <?php echo $attributes; ?>>
 		<svg viewBox="0 0 24 24"> <path d="M21,3H3C1.9,3,1,3.9,1,5v14c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2V5C23,3.9,22.1,3,21,3z M21,16H3V5h18V16z"/> </svg>
  <span><?php echo $button_title; ?></span>
 	</span>

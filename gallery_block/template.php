@@ -27,11 +27,11 @@ $gallery_name = get_field('gallery_name');
 $gallery_name = preg_replace('/\s*/', '', $gallery_name);
 // convert the string to all lowercase
 $gallery_name = strtolower($gallery_name);
-
+$attributes = get_field( 'attributes' );
 	?>
 	
 	
-<div class="<?php echo '' . join( ' ', $classes ) . ''; ?>" name="<?php echo $anchor; ?>">
+<div class="<?php echo '' . join( ' ', $classes ) . ''; ?>" name="<?php echo $anchor; ?>" <?php echo $attributes; ?>>
 	<div class="gallery-title"><?php the_field('gallery_name');?></div>
 	<?php 
 $images = get_field('gallery');
