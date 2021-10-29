@@ -64,7 +64,7 @@
 	 	$vid_origin = 'https://player.vimeo.com/video/'.$vimeo_id.'?autoplay=1';
 	  elseif( $source == 'pbs_player' ): 
 	 	$vid_source = 'tube-link';
-	 	$vid_origin = 'https://player.pbs.org/widget/partnerplayer/'.$pbs_player_url.'/?chapterbar=false&endscreen=true';	
+	 	$vid_origin = 'https://player.pbs.org/widget/partnerplayer/'.$pbs_player_url.'/?chapterbar=false&endscreen=false&callsign=wliw';
 	 endif 	 
 ?>
 	
