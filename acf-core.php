@@ -36,6 +36,7 @@ add_action( 'get_footer', 'prefix_add_acf_footer_styles' );
 				//include_once 'preso_preview/module.php';
 				include_once 'large_slider/module.php';
 				include_once 'video_summary/module.php';
+				include_once 'slide/module.php';
 			}
 		}
 		
