@@ -1,4 +1,4 @@
-<div style="display:none" class="modal-vid">
+<div class="modal-vid" style="display: none;">
     <div class="movie-box">
         <div class="wide-screen">
             <div class="vid-holder">
@@ -6,7 +6,7 @@
                 <img class="widescreen-img" src="<?php echo plugin_dir_url( __FILE__ ); ?>images/bg_widescreen.gif"/>
 				<img class="standard-img" src="<?php echo plugin_dir_url( __FILE__ ); ?>images/standard_bg.gif"/>
 				<img class="sixteen-nine" src="<?php echo plugin_dir_url( __FILE__ ); ?>images/16x9_bg.png"/>
-				<img class="pal-img" src="<?php echo plugin_dir_url( __FILE__ ); ?>>images/pal.png"/>
+				<img class="pal-img" src="<?php echo plugin_dir_url( __FILE__ ); ?>images/pal.png"/>
 				<img class="nat-arch-img" src="<?php echo plugin_dir_url( __FILE__ ); ?>images/na.gif" />
 				<img class="vintage-wide" src="<?php echo plugin_dir_url( __FILE__ ); ?>images/pano.gif" />
 				<img class="panovision" src="<?php echo plugin_dir_url( __FILE__ ); ?>images/pano.gif" />

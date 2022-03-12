@@ -1,15 +1,16 @@
 <?php
+	
 	// Create Block Attributes
 	acf_register_block(array(
 	'name'				=> 'gallery_block',
 	'title'				=> __('Gallery Block'),
 	'description'		=> __('Block for gallery slideshow'),
 	'render_template' => plugin_dir_path( __FILE__ ) . 'template.php',
-	'category'			=> 'acf-core-blocks',
+	'category'			=> 'custom-blocks',
 	'icon'				=> 'format-gallery',
 	'keywords'			=> array( 'columns' ),
 	'enqueue_style'     =>  plugin_dir_url( __FILE__ ). 'css/jquery.fancybox.min.css',
-	'enqueue_script'    =>  plugin_dir_url( __FILE__ ). 'js/jquery.fancybox.min.js', array('jquery'), '1.0', true,
+	'enqueue_script'    =>  plugin_dir_url( __FILE__ ). '/js/jquery.fancybox.min.js', array('jquery'), '1.0', true,
 	'supports'		=> [
 		'align'			=> false,
 		'anchor'		=> true,

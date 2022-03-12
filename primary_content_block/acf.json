@@ -1,7 +1,7 @@
 [
     {
         "key": "group_6050d6bf1b972",
-        "title": "--Primary Content Block",
+        "title": "Primary Content Block",
         "fields": [
             {
                 "key": "field_6063605837e6c",
@@ -13,28 +13,12 @@
                 "conditional_logic": 0,
                 "wrapper": {
                     "width": "",
-                    "class": "gberg-label",
+                    "class": "gberg-label block-name",
                     "id": ""
                 },
                 "message": "",
                 "new_lines": "wpautop",
                 "esc_html": 0
-            },
-            {
-                "key": "field_main_content_tab",
-                "label": "Main Content",
-                "name": "",
-                "type": "tab",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "placement": "top",
-                "endpoint": 0
             },
             {
                 "key": "field_61468d3da340c",
@@ -46,7 +30,7 @@
                 "conditional_logic": 0,
                 "wrapper": {
                     "width": "",
-                    "class": "pb-label",
+                    "class": "gberg-primary-block-name",
                     "id": ""
                 },
                 "default_value": "",
@@ -56,10 +40,10 @@
                 "maxlength": ""
             },
             {
-                "key": "field_ixnay",
-                "label": "Attributes",
+                "key": "field_619f1a427e453",
+                "label": "Settings",
                 "name": "",
-                "type": "tab",
+                "type": "accordion",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -68,11 +52,37 @@
                     "class": "",
                     "id": ""
                 },
-                "placement": "top",
+                "open": 0,
+                "multi_expand": 0,
                 "endpoint": 0
             },
             {
-                "key": "field_attributes",
+                "key": "field_619f1a5f7e454",
+                "label": "Container Width",
+                "name": "container_width",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+	                "main-container": "Fixed Width",
+                    "fullwidth": "Fullwidth"
+                },
+                "default_value": false,
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_619f1f3c0db32",
                 "label": "Attributes",
                 "name": "attributes",
                 "type": "text",
@@ -80,7 +90,7 @@
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
-                    "width": "",
+                    "width": "75",
                     "class": "",
                     "id": ""
                 },
@@ -107,6 +117,7 @@
         "instruction_placement": "label",
         "hide_on_screen": "",
         "active": true,
-        "description": ""
+        "description": "",
+        "show_in_rest": 0
     }
 ]

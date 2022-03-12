@@ -22,36 +22,22 @@
 	}
 	
 	$image = get_field('image');
-	$remote_url = get_field ('url');
-	$mobile_download_link = get_field ( 'mobile_download_link' );
-	$source = get_field( 'select_source' );
-	$attributes = get_field( 'attributes' );
+	$url = get_field ('url');
+	$mobile_download_link = get_field ('mobile_download_link');
+	 ?>
+
 	
-	$presentation = get_field('presentation');
-		if( $presentation ):
-			foreach( $presentation as $presentation ): 
-			$permalink = get_permalink( $presentation->ID );
-        endforeach;  
-    endif;
-    	
-	if( $source == 'url' ) : 
-		$url = $remote_url;
-	 elseif( $source == 'presentation' ): 
-	  	$url = $permalink;
-	 endif;
-    
-	?>
 
 
 <?php 
 	if( !empty( $mobile_download_link ) ): ?>
    
-   <a class="mobile-preso" href="<?php echo $mobile_download_link; ?>"  target="_blank" <?php echo $attributes; ?> ><img class="book-image" src="<?php echo esc_url($image['url']); ?>"/></a>
+   <a class="mobile-preso" href="<?php echo $mobile_download_link; ?>"  target="_blank"><img class="book-image" src="<?php echo esc_url($image['url']); ?>"/></a>
    
    <?php 
 	if( !empty( $image ) ): ?>
-    <img <?php echo $attributes; ?> presoUrl="<?php echo $url; ?>" id="<?php echo esc_attr($id); ?>" class="desk-preso book-image preso-link<?php echo esc_attr($className); ?>" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></a>
-     <p <?php echo $attributes; ?> class="mobile-preso-title"><a href="<?php echo $mobile_download_link; ?>" target="_blank">Download <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><g><rect fill="none" height="24" width="24"/></g><g><path d="M18,15v3H6v-3H4v3c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2v-3H18z M17,11l-1.41-1.41L13,12.17V4h-2v8.17L8.41,9.59L7,11l5,5 L17,11z"/></g></svg></a></p>
+    <img data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" presoUrl="<?php echo $url; ?>" id="<?php echo esc_attr($id); ?>" class="aos-init aos-animate desk-preso book-image preso-link sixteen-nine-btn <?php echo esc_attr($className); ?>" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></a>
+     <p class="mobile-preso-title"><a href="<?php echo $mobile_download_link; ?>" target="_blank">Download <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><g><rect fill="none" height="24" width="24"/></g><g><path d="M18,15v3H6v-3H4v3c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2v-3H18z M17,11l-1.41-1.41L13,12.17V4h-2v8.17L8.41,9.59L7,11l5,5 L17,11z"/></g></svg></a></p>
 <?php endif; ?>
 
    
@@ -59,7 +45,7 @@
    
    <?php 
 	if( empty( $mobile_download_link ) ): ?>
-    <img <?php echo $attributes; ?> presoUrl="<?php echo $url; ?>" id="<?php echo esc_attr($id); ?>" class="book-image show-desk-preso preso-link<?php echo esc_attr($className); ?>" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></a>
+    <img presoUrl="<?php echo $url; ?>" id="<?php echo esc_attr($id); ?>" class="book-image show-desk-preso preso-link sixteen-nine-btn <?php echo esc_attr($className); ?>" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></a>
    
 <?php endif; ?>
    

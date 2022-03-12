@@ -20,22 +20,6 @@
                 "new_lines": "wpautop",
                 "esc_html": 0
             },
-             {
-                "key": "field_main_content_tab",
-                "label": "Main Content",
-                "name": "",
-                "type": "tab",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "placement": "top",
-                "endpoint": 0
-            },
             {
                 "key": "field_613b95fba846e",
                 "label": "Button Type",
@@ -45,7 +29,7 @@
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
-                    "width": "",
+                    "width": "50",
                     "class": "",
                     "id": ""
                 },
@@ -53,45 +37,13 @@
                     "text": "Text",
                     "image": "Image"
                 },
-                "default_value": false,
+                "default_value": "text",
                 "allow_null": 0,
                 "multiple": 0,
                 "ui": 0,
                 "return_format": "value",
                 "ajax": 0,
                 "placeholder": ""
-            },
-            {
-                "key": "field_613b9659a846f",
-                "label": "Thumb",
-                "name": "thumb",
-                "type": "image",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": [
-                    [
-                        {
-                            "field": "field_613b95fba846e",
-                            "operator": "==",
-                            "value": "image"
-                        }
-                    ]
-                ],
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "return_format": "array",
-                "preview_size": "medium",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": ""
             },
             {
                 "key": "field_6066082aa79e4",
@@ -102,7 +54,7 @@
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
-                    "width": "",
+                    "width": "50",
                     "class": "",
                     "id": ""
                 },
@@ -121,7 +73,7 @@
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
-                    "width": "",
+                    "width": "50",
                     "class": "",
                     "id": ""
                 },
@@ -150,14 +102,14 @@
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
-                    "width": "",
+                    "width": "50",
                     "class": "",
                     "id": ""
                 },
                 "choices": {
-                    "standard-btn": "Standard",
-                    "sixteen-nine-btn": "16x9",
+	                "sixteen-nine-btn": "16x9",
                     "widescreen-btn": "Widescreen",
+                    "standard-btn": "Standard",
                     "pano-btn": "Panovision",
                     "pal-btn": "PAL",
                     "na-btn": "National Archive",
@@ -170,6 +122,43 @@
                 "return_format": "value",
                 "ajax": 0,
                 "placeholder": ""
+            },
+            {
+                "key": "field_613b9659a846f",
+                "label": "Thumb",
+                "name": "thumb",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_613b95fba846e",
+                            "operator": "==",
+                            "value": "image"
+                        },
+                        {
+                            "field": "field_606606753de5f",
+                            "operator": "!=",
+                            "value": "youtube"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
             },
             {
                 "key": "field_606606753ded6",
@@ -332,41 +321,6 @@
                 "prepend": "",
                 "append": "",
                 "maxlength": ""
-            },
-            {
-                "key": "field_ixnay",
-                "label": "Attributes",
-                "name": "",
-                "type": "tab",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "placement": "top",
-                "endpoint": 0
-            },
-            {
-                "key": "field_attributes",
-                "label": "Attributes",
-                "name": "attributes",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
             }
         ],
         "location": [
@@ -385,6 +339,7 @@
         "instruction_placement": "label",
         "hide_on_screen": "",
         "active": true,
-        "description": ""
+        "description": "",
+        "show_in_rest": 0
     }
 ]

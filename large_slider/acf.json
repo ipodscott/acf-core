@@ -21,8 +21,8 @@
                 "esc_html": 0
             },
             {
-                "key": "field_615ff097d29c8",
-                "label": "Slider Content",
+                "key": "field_60635c4aa3e77",
+                "label": "Content",
                 "name": "",
                 "type": "accordion",
                 "instructions": "",
@@ -35,6 +35,62 @@
                 },
                 "open": 0,
                 "multi_expand": 0,
+                "endpoint": 0
+            },
+            {
+                "key": "field_5f42f9c9c21e6",
+                "label": "Settings",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5f42f9e4c21e7",
+                "label": "Settings",
+                "name": "settings",
+                "type": "clone",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "clone": [
+                    "field_5f34310369b1f",
+                    "field_5f34311369b20",
+                    "field_5f343c95dd0ba",
+                    "field_5f343cb4dd0bb"
+                ],
+                "display": "seamless",
+                "layout": "block",
+                "prefix_label": 0,
+                "prefix_name": 0
+            },
+            {
+                "key": "field_5f42fa12c21e8",
+                "label": "Slides",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
                 "endpoint": 0
             },
             {
@@ -72,9 +128,11 @@
                                 },
                                 "post_type": [
                                     "movie",
+                                    "tv_shows",
                                     "tv_series",
                                     "page",
-                                    "serials_collection"
+                                    "serials_collection",
+                                    "animation"
                                 ],
                                 "taxonomy": "",
                                 "filters": [

@@ -5,7 +5,7 @@
 	'title'				=> __('Audio Button'),
 	'description'		=> __('Block for audio button'),
 	'render_template' => plugin_dir_path( __FILE__ ) . 'template.php',
-	'category'			=> 'acf-core-blocks',
+	'category'			=> 'custom-blocks',
 	'mode'			    => 'preview',
 	'icon'				=> 'controls-volumeon',
 	'keywords'			=> array( 'columns' ),

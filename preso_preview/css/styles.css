@@ -41,53 +41,21 @@ img.book-image{
 	display: inline-block;
 	position: relative;
 	width: 14px;
+	top: 2px;
 	margin-left: 5px;
 	height: auto;
-	fill:#000000;
+	fill:#FFFFFF;
 }
 
 .preso-loader{
-	background-color: rgba(0, 0, 0, 0.8);
-	display: block;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height:100vh;
-	z-index: 9999;
-	display: none;
-}
-
-.preso-box{
 	background-color: #000;
 	display: block;
 	position: fixed;
-	top: 20px;
+	top: 30px;
 	left: 20px;
 	width: calc(100% - 40px);
-	height: calc(100vh - 40px);	
-}
-
-.presoFrame{
-	display: block;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-}
-
-.close-preso{
-	display: block;
-	position: absolute;
-	top: 8px;
-	right: 12px;
-	cursor: pointer;
-}
-
-.close-preso svg{
-	width: 24px;
-	height: 24px;
+	height: calc(100vh - 60px);
+	z-index: 9999;
 }
 
 @media only screen and (max-width:768px) {

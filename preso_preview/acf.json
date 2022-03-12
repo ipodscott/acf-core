@@ -21,10 +21,10 @@
                 "esc_html": 0
             },
             {
-                "key": "field_main_content_tab",
-                "label": "Main Content",
+                "key": "field_613e0e21edb07",
+                "label": "Content",
                 "name": "",
-                "type": "tab",
+                "type": "accordion",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -33,7 +33,8 @@
                     "class": "",
                     "id": ""
                 },
-                "placement": "top",
+                "open": 0,
+                "multi_expand": 0,
                 "endpoint": 0
             },
             {
@@ -81,43 +82,8 @@
             },
             {
                 "key": "field_6140a7e4ea8dd",
-                "label": "Mobile Download Link",
+                "label": "Download Link",
                 "name": "mobile_download_link",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_ixnay",
-                "label": "Attributes",
-                "name": "",
-                "type": "tab",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "placement": "top",
-                "endpoint": 0
-            },
-            {
-                "key": "field_attributes",
-                "label": "Attributes",
-                "name": "attributes",
                 "type": "text",
                 "instructions": "",
                 "required": 0,

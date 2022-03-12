@@ -1,0 +1,94 @@
+.main-parallax-box{
+	display: block;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #333;
+}
+
+.parallax-box{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.main-parallax-box .wp-block-image{
+	margin: 0 !important;
+}
+
+.main-parallax-box .wp-block-image img{
+	width: calc(100vw - 40px) ;
+	max-width: 920px;
+	margin: 0 20px 0 20px;
+	height: auto;
+}
+
+.parallax-image{
+	background: url(https://images.unsplash.com/photo-1572043775979-5353d3c61a21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80);
+  background-position: center top;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width:100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top:0px;
+  left: 0px;
+
+}
+
+
+.header-img-overlay{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.top-parallax-overlay{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	padding: 0 0 0 0;
+}
+
+.acf-block-preview .container.parallax-overlay-content {
+	display: block;
+	position: relative;
+	width: calc(100% - 40px);
+	max-width: 960px;
+	color: #ccc;
+}
+
+.parallax-header-title{
+  color: #ccc;
+  display: inline-block;
+  padding: 30px 30px 30px 35px;
+  font-size: 32px;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  font-weight: 700;
+  max-width:75%;
+  letter-spacing:0.1em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #666;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 0px 0px 9px black;
+}
