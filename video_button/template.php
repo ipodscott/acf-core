@@ -32,7 +32,7 @@
 	}
 	
 	// Create class attribute allowing for custom "className" and "align" values.
-	$className = 'video-link page-vid-link';
+	$className = '';
 	if( !empty($block['className']) ) {
 	    $className .= ' ' . $block['className'];
 	}
@@ -49,8 +49,11 @@
 	$vimeo_id = get_field('vimeo_id');
 	$wistia_id = get_field('wistia_id');
 	$pbs_player_url = get_field('pbs_player_url');
-	
+	$pbs_player_url = get_field('pbs_player_url');
 	$image = get_field('thumb');
+	$use_custom_thumbnail = get_field( 'use_custom_thumbnail' );
+	$custom_thumbnail = get_field( 'custom_thumbnail' );
+	
    	if( $image ):
    	// Image variables.
 	    $img_url = $image['url'];
@@ -77,7 +80,14 @@
 	  elseif( $source == 'youtube' ): 
 	 	$vid_source = 'tube-link';
 	 	$vid_origin = 'https://www.youtube.com/embed/'.$youtube_id.'?autoplay=1';
-	 	$poster = 'https://img.youtube.com/vi/'.$youtube_id.'/maxresdefault.jpg';
+	 	
+	 	if( $use_custom_thumbnail ):
+	 		$poster = $custom_thumbnail;
+	 	elseif(!$use_custom_thumbnai):
+	 		$poster = 'https://img.youtube.com/vi/'.$youtube_id.'/maxresdefault.jpg';
+	 	endif; 
+	 	
+	 	
 	  elseif( $source == 'vimeo' ): 
 	 	$vid_source = 'tube-link';
 	 	$vid_origin = 'https://player.vimeo.com/video/'.$vimeo_id.'?autoplay=1';
@@ -93,7 +103,7 @@
 
 <?php if($button_type == 'image') : ?>
 
-<div class="image-vid-btn">
+<div class="image-vid-btn <?php echo esc_attr($className); ?>">
 	    <div class="image-vid-link <?php echo $vid_source; ?> <?php echo $resolution; ?>" vidurl="<?php echo $vid_origin; ?>" >
         <img class="vid-btn-img" style="background-image: url('<?php echo $poster; ?>')"  src="<?php echo plugin_dir_url( __FILE__ ); ?>images/video_thumb.gif"/>
         <div class="vid-title"><svg class="vid-play-btn" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><g><rect fill="none" height="24" width="24"/></g><g><path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M9.5,16.5v-9l7,4.5L9.5,16.5z"/></g></svg></div>

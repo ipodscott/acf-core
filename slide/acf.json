@@ -1,18 +1,18 @@
 [
     {
-        "key": "group_614fbf4ed4366",
-        "title": "Accordion",
+        "key": "group_622c0f1d14c2d",
+        "title": "Slide",
         "fields": [
             {
-                "key": "field_614fe150a049f",
-                "label": "Accordion Header",
-                "name": "accordion_header",
+                "key": "field_622e83516aa74",
+                "label": "Slide Name",
+                "name": "slide_name",
                 "type": "text",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
-                    "width": "50",
+                    "width": "",
                     "class": "",
                     "id": ""
                 },
@@ -23,23 +23,153 @@
                 "maxlength": ""
             },
             {
-                "key": "field_614ffa22baba1",
-                "label": "Active",
-                "name": "active",
-                "type": "true_false",
+                "key": "field_622e8ac4fa378",
+                "label": "Background Type",
+                "name": "background_type",
+                "type": "select",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
-                    "width": "50",
+                    "width": "",
                     "class": "",
                     "id": ""
                 },
-                "message": "",
-                "default_value": 0,
-                "ui": 1,
-                "ui_on_text": "",
-                "ui_off_text": ""
+                "choices": {
+                    "image": "Image",
+                    "video": "Video"
+                },
+                "default_value": "image",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_622c12f450e55",
+                "label": "Background Image",
+                "name": "background_image",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_622e8ac4fa378",
+                            "operator": "==",
+                            "value": "image"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_622e8b1bbc39b",
+                "label": "Background Video",
+                "name": "background_video",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_622e8ac4fa378",
+                            "operator": "==",
+                            "value": "video"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "upload": "Upload",
+                    "remote": "Remote"
+                },
+                "default_value": false,
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_622c1d46d08c9",
+                "label": "Slide Opacity",
+                "name": "slide_opacity",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "fade-1": "fade-1",
+                    "fade-2": "fade-2",
+                    "fade-3": "fade-3",
+                    "fade-4": "fade-4",
+                    "fade-5": "fade-5",
+                    "fade-6": "fade-6",
+                    "fade-7": "fade-7",
+                    "fade-8": "fade-8",
+                    "fade-9": "fade-9"
+                },
+                "default_value": "fade-6",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_622e629e62fa2",
+                "label": "Slide Effect",
+                "name": "slide_effect",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "kenBurns": "Ken Burns",
+                    "kenBurns zoomin": "Ken Burns Zoomin",
+                    "scenic": "Scenic",
+                    "parallax": "Parallax"
+                },
+                "default_value": "kenBurns",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
             }
         ],
         "location": [
@@ -47,7 +177,7 @@
                 {
                     "param": "block",
                     "operator": "==",
-                    "value": "acf\/accordion"
+                    "value": "acf\/slide"
                 }
             ]
         ],
@@ -58,6 +188,7 @@
         "instruction_placement": "label",
         "hide_on_screen": "",
         "active": true,
-        "description": ""
+        "description": "",
+        "show_in_rest": 0
     }
 ]

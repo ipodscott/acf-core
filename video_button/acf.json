@@ -107,7 +107,7 @@
                     "id": ""
                 },
                 "choices": {
-	                "sixteen-nine-btn": "16x9",
+                    "sixteen-nine-btn": "16x9",
                     "widescreen-btn": "Widescreen",
                     "standard-btn": "Standard",
                     "pano-btn": "Panovision",
@@ -150,6 +150,65 @@
                     "id": ""
                 },
                 "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_622eb1baad7c9",
+                "label": "Use Custom Thumbnail",
+                "name": "use_custom_thumbnail",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_606606753de5f",
+                            "operator": "==",
+                            "value": "youtube"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 1,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_622eb10e9bded",
+                "label": "Custom Thumbnail",
+                "name": "custom_thumbnail",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_622eb1baad7c9",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
                 "preview_size": "medium",
                 "library": "all",
                 "min_width": "",

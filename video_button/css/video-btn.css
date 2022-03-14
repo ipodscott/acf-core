@@ -125,7 +125,7 @@
     display: inline-block;
     position: relative;
     font-size: 16px;
-    margin-right: 8px;
+    margin-right: 8px !important;
     top: 0;
 }
 
@@ -167,7 +167,6 @@
 }
 
 .image-vid-link:hover .vid-title{
-	background-color: rgba(255, 255, 255, 0.5);
 	color: #000;
 }
 
@@ -219,10 +218,9 @@ img.vid-btn-img{
 }
 
 .vid-title:hover .vid-play-btn{
-	fill: #000000;
 	width: calc(25% + 10px);
-	opacity: 0.6;
 }
+
 .video-btn{
     display: flex;
     margin: 0 auto 1.25em auto;
@@ -245,7 +243,9 @@ img.vid-btn-img{
     color: #ccc;
     box-shadow: none;
     }
-    
+   .video-btn span{
+	   padding-left: 8px;
+   } 
     
 .vid-main-content {
     position: fixed;

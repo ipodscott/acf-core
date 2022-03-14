@@ -8,6 +8,7 @@
 	'render_template' => plugin_dir_path( __FILE__ ) . 'template.php',
 	'category'			=> 'custom-blocks',
 	'icon'				=> 'format-gallery',
+	'mode'				=> 'auto',
 	'keywords'			=> array( 'columns' ),
 	'enqueue_style'     =>  plugin_dir_url( __FILE__ ). 'css/jquery.fancybox.min.css',
 	'enqueue_script'    =>  plugin_dir_url( __FILE__ ). '/js/jquery.fancybox.min.js', array('jquery'), '1.0', true,

@@ -13,7 +13,7 @@
     font-weight:700;
     letter-spacing:0.1em;
     cursor:pointer;
-	width: calc(100% - 32px);
+	width: 100%;
     clear: both;
     transition: all 0.5s;
     padding: 3px 15px 4px 15px;
