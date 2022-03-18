@@ -26,6 +26,7 @@ add_action( 'get_footer', 'prefix_add_acf_footer_styles' );
 			if( function_exists('acf_register_block') ) {
 				include_once 'accordion/module.php';
 				include_once 'audio_button/module.php';
+				include_once 'big_book/module.php';
 				include_once 'primary_content_block/module.php';
 				include_once 'elementor_block/module.php';
 				include_once 'gallery_block/module.php';
@@ -94,3 +95,17 @@ function custom_acf_css() {
 	wp_enqueue_style( 'acf_styles_footer', plugins_url( 'css/acf-blocks.css', __FILE__ ) );
     }
 add_action('admin_footer', 'custom_acf_css');
+
+//add Material Icon Support
+function material_icons() {
+	if (!is_admin()) {			
+		wp_enqueue_style( 'material_icons', '//fonts.googleapis.com/css2?family=Material+Icons&display=swap',false,'1.1','all');	
+		}
+	}
+	add_action('init', 'material_icons');
+	
+	
+function admin_material_fonts() {
+	wp_enqueue_style( 'material_fonts', '//fonts.googleapis.com/css2?family=Material+Icons&display=swap',false,'1.1','all');
+	}
+add_action('admin_footer', 'admin_material_fonts');
