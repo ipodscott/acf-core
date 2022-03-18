@@ -16,6 +16,7 @@ acf_register_block( array(
    '1.0',
    true,
    'supports'        => [
+	  'mode'           => false,
       'align'           => false,
       'anchor'          => true,
       'customClassName' => true,
