@@ -91,6 +91,7 @@
     background-image:url(https://s3.amazonaws.com/imglibs/video_bg.png);
     background-position:center center;
     background-repeat:no-repeat;
+    z-index: 9999 !important;
 }
 
 

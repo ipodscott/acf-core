@@ -36,8 +36,9 @@ $( document ).ready(function() {
 	
 	$( ".mp4-link" ).click(function() {
 		$('body').addClass('stop-scroll');
-		$('.vidFrame, .vimFrame').hide();
-		$('.vidFrame, .vimFrame').attr("src", "empty");
+		$('.vidFrame, .vidFrame').hide();
+		$('video').removeClass('hide');
+		$('.vidFrame, .vidFrame').attr("src", "empty");
 		$('.myVideo').attr("src", $(this).attr("vidURL"));
 		$('.myVideo').show(function(){
 			 document.getElementById('myVideo').play();
