@@ -5,18 +5,17 @@
 	'title'				=> __('Audio Button'),
 	'description'		=> __('Block for audio button'),
 	'render_template' => plugin_dir_path( __FILE__ ) . 'template.php',
-	'category'			=> 'custom-blocks',
+	'category'			=> 'acf-core-blocks',
 	'mode'			    => 'preview',
 	'icon'				=> 'controls-volumeon',
 	'keywords'			=> array( 'columns' ),
-		'supports'		=> [
+	'supports'		=> [
 		'align'			=> false,
 		'anchor'		=> true,
 		'customClassName'	=> true,
 		'mode'          => true,
 		]
 ));
-
 
 
 // Read local acf.json

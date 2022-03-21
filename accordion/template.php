@@ -4,6 +4,20 @@
  *
  * This is the template for a modal video button.
  */
+ 
+ 	if( ! function_exists('accordion_preview')) {
+	 	
+		// Add Accordion CSS and JS 
+		wp_enqueue_style( 'accordion_style', plugin_dir_url( __FILE__ ) . 'css/style.css',true,'1.1','all' );
+		wp_enqueue_script( 'accordion_js', plugin_dir_url( __FILE__ ) .  'js/script.js', array('jquery'), '1.0', true );
+		
+		function accordion_preview() 
+		{ // Add accordion preview content in the backend.
+		    wp_enqueue_style( 'accordion_preview_style', plugin_dir_url( __FILE__ ) . 'css/style.css',true,'1.1','all' );
+		}
+		add_action('admin_footer', 'accordion_preview');	
+	}
+
 
 	// Create id attribute allowing for custom "anchor" value.
 	$id = $block['id'];

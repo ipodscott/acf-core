@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-	width: calc(100% - 40px);
+	width: 100%;
 	padding: 15px 20px 14px 20px;
 	background-color: #efefef;
 	border-style: solid;
@@ -44,7 +44,7 @@
 .acc-body{
 	display: none;
 	position: relative;
-	width: calc(100% - 40px);
+	width: 100%;
 	padding: 20px;
 	background-color: #fff;
 	border-style: solid;

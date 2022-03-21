@@ -1,4 +1,5 @@
-var $container = jQuery('.acc-body'), $acc_head = jQuery('.acc-head');
+jQuery( document ).ready(function() {
+	var $container = jQuery('.acc-body'), $acc_head = jQuery('.acc-head');
 		
 				$acc_head.last().addClass('last');
 				
@@ -15,3 +16,4 @@ var $container = jQuery('.acc-body'), $acc_head = jQuery('.acc-head');
 		          }
 					e.preventDefault();
 	});
+});

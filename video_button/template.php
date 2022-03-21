@@ -83,7 +83,7 @@
 	 	
 	 	if( $use_custom_thumbnail ):
 	 		$poster = $custom_thumbnail;
-	 	elseif(!$use_custom_thumbnai):
+	 	elseif( !$use_custom_thumbnail ):
 	 		$poster = 'https://img.youtube.com/vi/'.$youtube_id.'/maxresdefault.jpg';
 	 	endif; 
 	 	

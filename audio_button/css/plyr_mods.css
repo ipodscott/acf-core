@@ -36,7 +36,7 @@
 .audio-controls{
     width:auto;
     height: auto;
-    padding: 5px 5px 0 5px;
+    padding: 3px 5px 0 5px;
     background-color:#000;
     display:flex;
     justify-content:space-around;
@@ -50,17 +50,19 @@
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-.audio-controls .material-icons{
-	font-size: 18px;
-	cursor: pointer;
-	border-radius: 3px;
-	width: 40px;
-	text-align: center;
-	transition: all 0.5s;
-	margin: 5px;
+.audio-controls svg{
+	padding: 3px 0 0 10px !important;
+    width: 36px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+    transition: all 0.5s;
+    margin: 5px;
+    fill: #fff;
 }
 
-.audio-controls .material-icons:hover{
+.audio-controls svg:hover{
 	background-color: #595959;
 }
 
@@ -76,15 +78,22 @@
     justify-content: center;
     color:#fff;
     position: fixed;
-    bottom:40px;
+    bottom:30px !important;
     right:-40px;
     background-color:#000;
-    width:30px;
-    height:30px;
+    width:40px;
+    height:40px;
     border-radius:50%;
     -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     transition:all 1s;
+}
+
+.mini-audio-btn svg{
+	padding: 5px;
+	fill:#fff;
+	width: 32px;
+	height: 32px;
 }
 
 .mini-audio-btn:hover{

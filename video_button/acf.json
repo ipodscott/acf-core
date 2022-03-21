@@ -37,7 +37,7 @@
                     "text": "Text",
                     "image": "Image"
                 },
-                "default_value": "text",
+                "default_value": "image",
                 "allow_null": 0,
                 "multiple": 0,
                 "ui": 0,
