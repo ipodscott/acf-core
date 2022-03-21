@@ -57,7 +57,6 @@
    	if( $image ):
    	// Image variables.
 	    $img_url = $image['url'];
-		$thumb = $image['sizes'][ $size ];
 	    // Thumbnail size attributes.
 	    $size = 'large';
 	    $width = $image['sizes'][ $size . '-width' ];
