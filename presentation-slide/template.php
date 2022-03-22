@@ -40,14 +40,6 @@
 	$background_type = get_field( 'background_type' );
 	$bg_color = get_field( 'color' );
 	
-	if( $background_video == 'upload' ) : 	
-		$vid_bg = $bg_video_upload;
-	 
-	 elseif( $background_video == 'remote' ): 
-	 	$vid_bg = $bg_video_url;
-	 	
-	 endif 
-	
 	?>
 	<?php if( !$make_sub_slide ) : ?>
 	  
