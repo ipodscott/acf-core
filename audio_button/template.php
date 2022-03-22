@@ -63,7 +63,9 @@
 	
 <?php if ( $button_type == 'text' ): ?>
     <span id="<?php echo esc_attr($id); ?>" class="play_audio <?php echo esc_attr($className); ?>" audiourl="<?php echo $audio; ?>" <?php echo $attributes; ?>>
+    <div class="audio-btn-title">
 	<svg viewBox="0 0 24 24"><path d="M9,11V5c0-1.7,1.3-3,3-3s3,1.3,3,3v6c0,1.7-1.3,3-3,3S9,12.7,9,11z M17,11c0,2.8-2.2,5-5,5s-5-2.2-5-5H5 c0,3.5,2.6,6.4,6,6.9V21h2v-3.1c3.4-0.5,6-3.4,6-6.9H17z"/></svg><?php echo $title; ?>
+    </div>
 
 <?php else: ?>
 
