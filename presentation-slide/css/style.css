@@ -56,6 +56,12 @@
 	margin-right: 0 !important;
 }
 
+.preso-content{
+	padding: 0 80px 0 80px;
+	z-index: 999;
+}
+
+
 /* ------------- Live ------------- */
 
 body{
@@ -64,7 +70,8 @@ body{
 	background-size: cover;
 }
 
-.preso-content{
+
+.cd-slideshow .preso-content{
 	display: block;
 	position: relative;
 	padding: 0 80px 0 80px;
