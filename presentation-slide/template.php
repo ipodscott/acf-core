@@ -33,14 +33,14 @@
 	$slide_name = get_field( 'slide_name' );
 	$slide_slug = '' . sanitize_title( $slide_name ) . '';
 	$background_type = get_field( 'background_type' );
+	
 	$background_image = get_field( 'image' );
 	$use_sub_slides = get_field( 'use_sub_slides' );
 	$make_sub_slide = get_field( 'make_sub_slide' );
 	$background_type = get_field( 'background_type' );
-	$image = get_field( 'image' );
 	$bg_color = get_field( 'color' );
 	
-	if( $background_video == 'upload' ) : 
+	if( $background_video == 'upload' ) : 	
 		$vid_bg = $bg_video_upload;
 	 
 	 elseif( $background_video == 'remote' ): 
@@ -59,7 +59,7 @@
 						<?php if( $background_type == 'color' ) : ?>
 							<span>Background Color: <span class="bgcolor-sample" style="background-color:<?php echo $bg_color; ?>"></span></span>
 							<?php  else: ?> 
-							<span>Background Image</span>
+							<span>Background Image | <?php echo $background_image;?></span>
 						<?php endif ?>
 						
 					</div>
