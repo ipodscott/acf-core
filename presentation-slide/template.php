@@ -59,7 +59,7 @@
 						<?php if( $background_type == 'color' ) : ?>
 							<span>Background Color: <span class="bgcolor-sample" style="background-color:<?php echo $bg_color; ?>"></span></span>
 							<?php  else: ?> 
-							<span>Background Image | <?php echo $background_image;?></span>
+							<span>Background Image</span>
 						<?php endif ?>
 						
 					</div>
