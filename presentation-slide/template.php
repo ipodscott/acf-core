@@ -32,12 +32,13 @@
 	
 	$slide_name = get_field( 'slide_name' );
 	$slide_slug = '' . sanitize_title( $slide_name ) . '';
-	$background_image = get_field( 'background_image' );
+	$background_type = get_field( 'background_type' );
+	$background_image = get_field( 'image' );
 	$use_sub_slides = get_field( 'use_sub_slides' );
 	$make_sub_slide = get_field( 'make_sub_slide' );
 	$background_type = get_field( 'background_type' );
 	$image = get_field( 'image' );
-	$color = get_field( 'color' );
+	$bg_color = get_field( 'color' );
 	
 	if( $background_video == 'upload' ) : 
 		$vid_bg = $bg_video_upload;
@@ -51,10 +52,23 @@
 	<?php if( !$make_sub_slide ) : ?>
 	  
 			<?php if( !$use_sub_slides ) : ?>
-				<?php if( is_admin() ):?><div class="slide-handle"><span>Slide</span></div><?php endif ?>
+				
+				<?php if( is_admin() ):?>
+					<div class="slide-handle">
+						<span>Slide</span> 
+						<?php if( $background_type == 'color' ) : ?>
+							<span>Background Color: <span class="bgcolor-sample" style="background-color:<?php echo $bg_color; ?>"></span></span>
+							<?php  else: ?> 
+							<span>Background Image</span>
+						<?php endif ?>
+						
+					</div>
+				<?php endif ?>
+				
 				<li class="preso-slide" id="<?php echo $slide_slug; ?>">
 					<div class="cd-slider-content">
-						<div class="content-wrapper">
+						<div class="content-wrapper" <?php if( !is_admin() ):?>style="background-color:<?php echo $bg_color; ?>; background-image: url(<?php echo $background_image;?>);"<?php endif;?>>
+							<?php if( !is_admin() ):?><?php if( $background_type == 'image' ) : ?><div class="bg-image-overlay"></div><?php endif;?><?php endif;?>
 							<div class="preso-content"><?php echo '<InnerBlocks />';?></div>
 						</div>
 					</div>
@@ -62,7 +76,15 @@
 		
 				  
 			<?php  else: ?> 
-				<?php if( is_admin() ):?><div class="slide-handle"><span>Sub Slide Container</span></div><?php endif ?>
+				
+				<?php if( is_admin() ):?>
+					
+					<div class="slide-handle">
+						<span>Sub Slide Container</span>
+					</div>
+					
+				<?php endif ?>
+				
 				<li class="preso-slide sub-slide-container" id="<?php echo $slide_slug; ?>">
 					<ol class="sub-slides">
 						<?php echo '<InnerBlocks />';?>
@@ -72,10 +94,21 @@
 			<?php endif ?>
 		
 		<?php  else: ?> 
-				<?php if( is_admin() ):?><div class="slide-handle"><span>Sub Slide</span></div><?php endif ?>
+				<?php if( is_admin() ):?>
+					<div class="slide-handle">
+						<span>Sub Slide</span> 
+						<?php if( $background_type == 'color' ) : ?>
+							<span>Background Color: <span class="bgcolor-sample" style="background-color:<?php echo $bg_color; ?>"></span></span>
+							<?php  else: ?> 
+								<span>Background Image</span>
+							<?php endif ?>	
+					</div>
+				<?php endif ?>	
+				
 				<li class="preso-slide" id="<?php echo $slide_slug; ?>">
 					<div class="cd-slider-content">
-						<div class="content-wrapper">
+						<div class="content-wrapper" <?php if( !is_admin() ):?>style="background-color:<?php echo $bg_color; ?>; background-image: url(<?php echo $background_image;?>);"<?php endif;?>>
+							<?php if( !is_admin() ):?><?php if( $background_type == 'image' ) : ?><div class="bg-image-overlay"></div><?php endif;?><?php endif;?>
 							<div class="preso-content"><?php echo '<InnerBlocks />';?></div>		
 						</div>
 					</div>
