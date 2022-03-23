@@ -76,8 +76,8 @@
 					</div>
 					
 				<?php endif ?>
+				<li id="<?php echo $slide_slug; ?>" class="preso-slide sub-slide-container">
 				
-				<li class="preso-slide sub-slide-container" id="<?php echo $slide_slug; ?>">
 					<ol class="sub-slides">
 						<?php echo '<InnerBlocks />';?>
 					</ol>
@@ -97,7 +97,7 @@
 					</div>
 				<?php endif ?>	
 				
-				<li class="preso-slide" id="<?php echo $slide_slug; ?>">
+				<li class="preso-slide">
 					<div class="cd-slider-content">
 						<div class="content-wrapper" <?php if( !is_admin() ):?>style="background-color:<?php echo $bg_color; ?>; background-image: url(<?php echo $background_image;?>);"<?php endif;?>>
 							<?php if( !is_admin() ):?><?php if( $background_type == 'image' ) : ?><div class="bg-image-overlay"></div><?php endif;?><?php endif;?>
