@@ -47,7 +47,7 @@
 				
 				<?php if( is_admin() ):?>
 					<div class="slide-handle">
-						<span>Slide</span> 
+						<span>Slide | <?php echo $slide_name; ?></span> 
 						<?php if( $background_type == 'color' ) : ?>
 							<span>Background Color: <span class="bgcolor-sample" style="background-color:<?php echo $bg_color; ?>"></span></span>
 							<?php  else: ?> 
@@ -71,8 +71,8 @@
 				
 				<?php if( is_admin() ):?>
 					
-					<div class="slide-handle">
-						<span>Sub Slide Container</span>
+					<div class="slide-handle sub-slide-container-handle">
+						<span>Sub Slide Container | <?php echo $slide_name; ?></span>
 					</div>
 					
 				<?php endif ?>
@@ -87,8 +87,8 @@
 		
 		<?php  else: ?> 
 				<?php if( is_admin() ):?>
-					<div class="slide-handle">
-						<span>Sub Slide</span> 
+					<div class="slide-handle sub-slide-handle">
+						<span>Sub Slide |  <?php echo $slide_name; ?></span> 
 						<?php if( $background_type == 'color' ) : ?>
 							<span>Background Color: <span class="bgcolor-sample" style="background-color:<?php echo $bg_color; ?>"></span></span>
 							<?php  else: ?> 

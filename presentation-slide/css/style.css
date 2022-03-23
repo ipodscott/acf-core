@@ -38,9 +38,9 @@
 	border-width: 1px 1px 0 1px;
 	border-color: #333;
 	font-size: 12px;
-	color: #000;
+	color: #fff;
 	padding: 5px 0 5px 0;
-	background-color: #f6f6f6;
+	background-color: #336699;
 }
 
 .slide-handle span{
@@ -49,11 +49,24 @@
 	margin: 0 10px 0 10px;
 }
 
+.sub-slide-handle{
+	color: #fff;
+	background-color: #333;
+}
+
+.sub-slide-container-handle{
+	color: #fff;
+	background-color: red;
+}
+
 .bgcolor-sample{
 	display: inline-block;
 	width: 24px;
 	height: 24px;
 	margin-right: 0 !important;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #fff;
 }
 
 .preso-content{
