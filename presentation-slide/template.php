@@ -34,11 +34,11 @@
 	$slide_slug = '' . sanitize_title( $slide_name ) . '';
 	$background_type = get_field( 'background_type' );
 	
-	$background_image = get_field( 'image' );
+	$background_image = get_field( 'bg_image' );
 	$use_sub_slides = get_field( 'use_sub_slides' );
 	$make_sub_slide = get_field( 'make_sub_slide' );
 	$background_type = get_field( 'background_type' );
-	$bg_color = get_field( 'color' );
+	$bg_color = get_field( 'bg_color' );
 	
 	?>
 	<?php if( !$make_sub_slide ) : ?>

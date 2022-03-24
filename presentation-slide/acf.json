@@ -1,10 +1,10 @@
 [
     {
-        "key": "group_622c0f1d14c2d",
-        "title": "Presentation Slide",
+        "key": "group_623bb9480fd19",
+        "title": "Presentation Slide Settings",
         "fields": [
             {
-                "key": "field_622e83516aa74",
+                "key": "field_623bb969f0219",
                 "label": "Slide Name",
                 "name": "slide_name",
                 "type": "text",
@@ -23,7 +23,7 @@
                 "maxlength": ""
             },
             {
-                "key": "field_62362b7ee589e",
+                "key": "field_623bb974f021a",
                 "label": "Use Sub Slides",
                 "name": "use_sub_slides",
                 "type": "true_false",
@@ -42,21 +42,13 @@
                 "ui_off_text": ""
             },
             {
-                "key": "make_sub_slide",
+                "key": "field_623bb9a46d41a",
                 "label": "Make Sub Slide",
                 "name": "make_sub_slide",
                 "type": "true_false",
                 "instructions": "",
                 "required": 0,
-                "conditional_logic": [
-                    [
-                        {
-                            "field": "field_62362b7ee589e",
-                            "operator": "!=",
-                            "value": "1"
-                        }
-                    ]
-                ],
+                "conditional_logic": 0,
                 "wrapper": {
                     "width": "",
                     "class": "",
@@ -69,7 +61,7 @@
                 "ui_off_text": ""
             },
             {
-                "key": "field_62362ae8e589b",
+                "key": "field_623bb9ba31a66",
                 "label": "Background Type",
                 "name": "background_type",
                 "type": "select",
@@ -78,8 +70,9 @@
                 "conditional_logic": [
                     [
                         {
-                            "field": "field_622e83516aa74",
-                            "operator": "!=empty"
+                            "field": "field_623bb974f021a",
+                            "operator": "!=",
+                            "value": "1"
                         }
                     ]
                 ],
@@ -95,22 +88,22 @@
                 "default_value": "color",
                 "allow_null": 0,
                 "multiple": 0,
-                "ui": 0,
-                "return_format": "value",
+                "ui": 1,
                 "ajax": 0,
+                "return_format": "value",
                 "placeholder": ""
             },
             {
-                "key": "field_62362b28e589c",
-                "label": "Image",
-                "name": "image",
+                "key": "field_623bba350eceb",
+                "label": "Background Image",
+                "name": "bg_image",
                 "type": "image",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": [
                     [
                         {
-                            "field": "field_62362ae8e589b",
+                            "field": "field_623bb9ba31a66",
                             "operator": "==",
                             "value": "image"
                         }
@@ -133,16 +126,16 @@
                 "mime_types": ""
             },
             {
-                "key": "field_62362b53e589d",
-                "label": "Color",
-                "name": "color",
+                "key": "field_623bba830ecec",
+                "label": "Background Color",
+                "name": "bg_color",
                 "type": "color_picker",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": [
                     [
                         {
-                            "field": "field_62362ae8e589b",
+                            "field": "field_623bb9ba31a66",
                             "operator": "==",
                             "value": "color"
                         }
