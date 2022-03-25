@@ -4,8 +4,6 @@
  *
  * This is the template for a modal video button.
  */
- 
-	
 	if( ! function_exists('add_video_layer') && ! function_exists('video_btn_preview')) {
 	
 		add_action('wp_footer', 'add_video_layer');
@@ -23,7 +21,6 @@
 		}
 		add_action('admin_footer', 'video_btn_preview');	
 	}
-	
 
 	// Create id attribute allowing for custom "anchor" value.
 	$id = $block['id'];

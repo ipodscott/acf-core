@@ -4,6 +4,15 @@
  *
  * This is the template for a modal video button.
  */
+ 
+	 if( !function_exists('dm_slide_preview')) {
+		
+			function dm_slide_preview() 
+			{ // Adds video styles to preview content in the backend.
+			    wp_enqueue_style( 'dm_slide_preview', plugin_dir_url( __FILE__ ) . 'css/dm_slide_preview.css',true,'1.1','all' );
+			}
+			add_action('admin_footer', 'dm_slide_preview');	
+		}
 
 	// Create id attribute allowing for custom "anchor" value.
 	$id = $block['id'];
@@ -38,7 +47,9 @@
 	
 	?>
 
-
+<?php if (is_admin()) : ?> <div class="designmodo-slide-handle">
+	<span><?php  echo $slide_name; ?> | Slide Effect : <?php echo $slide_effect; ?></span> </div>
+<?php endif ?>
 	<section class="slide <?php echo $slide_opacity; ?> <?php echo $slide_effect; ?> <?php if($background_type == 'video') : ?> video <?php endif ?>" data-name="<?php echo $slide_slug; ?>">
 	  <div class="content">
 	    <div class="container">
