@@ -40,11 +40,11 @@
 }
 
 .acc-body{
-	display: flex;
+	display: none;
 	flex-wrap: wrap;
 	position: relative;
 	width: calc(100% - 42px);
-	padding: 20px 20px 0 20px;
+	padding: 20px 20px 5px 20px;
 	background-color: #fff;
 	border-style: solid;
     border-width: 0 1px 1px 1px;
@@ -53,7 +53,7 @@
 }
 
 .acf-block-preview .acc-body{
-	display: block !important;
+	display: flex !important;
 }
 
 .acc-body.active{

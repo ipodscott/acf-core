@@ -224,6 +224,7 @@ img.vid-btn-img{
 
 .video-btn{
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto 1.25em auto;
     align-items: center;
     position: relative;
