@@ -19,7 +19,6 @@ $classes = [''];
 		$attributes = get_field( 'attributes' );
 ?>
 
-
 <div <?php echo $attributes; ?> class="<?php echo '' . join( ' ', $classes ) . ''; ?>" name="<?php echo $anchor; ?>">
     <div class="<?php echo $container_width; ?>">
 	    <div class="row">

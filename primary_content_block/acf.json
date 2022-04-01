@@ -4,32 +4,15 @@
         "title": "Primary Content Block",
         "fields": [
             {
-                "key": "field_6063605837e6c",
-                "label": "Primary Content Block",
-                "name": "",
-                "type": "message",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "gberg-label block-name",
-                    "id": ""
-                },
-                "message": "",
-                "new_lines": "wpautop",
-                "esc_html": 0
-            },
-            {
                 "key": "field_61468d3da340c",
-                "label": "Block Name",
+                "label": "Primary Block Container Name",
                 "name": "block_name",
                 "type": "text",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
-                    "width": "",
+                    "width": "25",
                     "class": "gberg-primary-block-name",
                     "id": ""
                 },
@@ -38,23 +21,6 @@
                 "prepend": "",
                 "append": "",
                 "maxlength": ""
-            },
-            {
-                "key": "field_619f1a427e453",
-                "label": "Settings",
-                "name": "",
-                "type": "accordion",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "open": 0,
-                "multi_expand": 0,
-                "endpoint": 0
             },
             {
                 "key": "field_619f1a5f7e454",
@@ -90,7 +56,7 @@
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
-                    "width": "75",
+                    "width": "50",
                     "class": "",
                     "id": ""
                 },

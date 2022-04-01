@@ -240,7 +240,7 @@
                 "choices": {
                     "100vh": "100vh",
                     "75vh": "75vh",
-                    "50 vh": "50vh",
+                    "50vh": "50vh",
                     "auto": "Auto"
                 },
                 "default_value": false,
