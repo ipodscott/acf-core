@@ -30,5 +30,9 @@ if( ! function_exists( 'register_my_menu' ) ) {
 	}
 	add_action( 'init', 'register_my_menu' );
 	
+	wp_enqueue_script( 'side_menu.js', plugin_dir_url( __FILE__ ) .  'js/script.js', array('jquery'), '1.0', true );
+	
 	wp_enqueue_style( 'side_navigation', plugin_dir_url( __FILE__ ) . 'css/style.css',true,'1.1','all' );
+	
+	
 }
