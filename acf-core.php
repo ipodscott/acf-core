@@ -38,6 +38,8 @@ add_action( 'get_footer', 'prefix_add_acf_footer_styles' );
 				include_once 'large_slider/module.php';
 				include_once 'video_summary/module.php';
 				include_once 'slide/module.php';
+				include_once 'side_navigation/module.php';
+				//include_once 'primary_flex_container/module.php';
 			}
 		}
 		

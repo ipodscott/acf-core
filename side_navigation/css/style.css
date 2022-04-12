@@ -1,0 +1,125 @@
+/* Menu Stuff */
+.menu-btn {
+    position: fixed;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: context-menu;
+    opacity: .6;
+    transition: all 0.5s;
+    background-color: #000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    fill:#fff;
+    text-align: center;
+    padding-left: 6px;
+    padding-top: 6px;
+}
+
+.menu-btn path{
+}
+
+.menu-btn:hover {
+    opacity: 1
+}
+
+.menu-title{
+	display: block;
+	position: relative;
+	clear: both;
+}
+
+.main-menu{
+	display: block;
+	position: relative;
+}
+
+.menu {
+    top: 0;
+    left: -290px;
+    position: fixed;
+    background-color: #111;
+    width: 280px;
+    height: 100%;
+    z-index: 999;
+    color: #efefef;
+    transition: all 0.75s;
+}
+
+.show-menu {
+    left: 0
+}
+
+.menu ul {
+	display: block;
+	position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.menu ul li {
+    display: block;
+    color: #efefef;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: all 0.5s;
+    letter-spacing: .25em;
+    font-weight: 700;
+    text-indent: 10px
+}
+
+.menu ul li a {
+    display: block;
+    position: relative;
+    padding: 10px;
+    text-decoration: none;
+    color: #efefef
+}
+
+.menu ul li:hover {
+    background-color: #333
+}
+
+.menu-title {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px;
+    color: #999;
+    font-size: 18px
+}
+
+.close-menu {
+    position: absolute;
+    top: 9px;
+    right: 0;
+    width: 40px;
+    height: auto;
+    opacity: .6;
+    transition: all 0.5s;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.close-menu:hover {
+    opacity: 1
+}
+
+.menu-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 999;
+    display: none;
+    opacity: .8
+}
