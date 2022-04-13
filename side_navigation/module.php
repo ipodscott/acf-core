@@ -10,10 +10,11 @@
 	'icon'				=> 'admin-site-alt3',
 	'keywords'			=> array( 'starter' ),
 	'supports'		=> [
-		'mode'			=> false,
+		'mode'			=> true,
 		'align'			=> false,
 		'anchor'		=> true,
-		'customClassName'	=> true
+		'customClassName'	=> true,
+		'jsx' 			=> true,
 	]
 ));
 
@@ -24,15 +25,3 @@ foreach ( $custom_fields as $custom_field ) {
    acf_add_local_field_group( $custom_field );
 }
 
-if( ! function_exists( 'register_my_menu' ) ) {
-	function register_my_menu() {
-		register_nav_menu('main_menu',__( 'Main Menu' ));
-	}
-	add_action( 'init', 'register_my_menu' );
-	
-	wp_enqueue_script( 'side_menu.js', plugin_dir_url( __FILE__ ) .  'js/script.js', array('jquery'), '1.0', true );
-	
-	wp_enqueue_style( 'side_navigation', plugin_dir_url( __FILE__ ) . 'css/style.css',true,'1.1','all' );
-	
-	
-}
