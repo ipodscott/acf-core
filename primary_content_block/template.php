@@ -19,10 +19,8 @@ $classes = [''];
 		$attributes = get_field( 'attributes' );
 ?>
 
-<div <?php echo $attributes; ?> class="<?php echo '' . join( ' ', $classes ) . ''; ?>" name="<?php echo $anchor; ?>">
-    <div class="<?php echo $container_width; ?>">
-	    <div class="row">
-        	<?php echo '<InnerBlocks />';?>
-	    </div>
-	</div>
+<div <?php echo $attributes; ?> class="<?php echo $container_width; ?> <?php echo '' . join( ' ', $classes ) . ''; ?>" name="<?php echo $anchor; ?>">
+	 
+    <?php echo '<InnerBlocks />';?>
+	    	
 </div>

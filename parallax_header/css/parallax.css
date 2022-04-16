@@ -16,9 +16,13 @@
 	height: 100%;
 }
 
-.main-parallax-box .wp-block-image{
-	margin: 0 !important;
+
+.main-parallax-box .wp-block-post-title{
+	color: #efefef;
 }
+
+
+
 
 .main-parallax-box .wp-block-image img{
 	width: calc(100vw - 40px) ;
@@ -74,6 +78,10 @@
 	color: #ccc;
 }
 
+.parallax-overlay-content{
+	
+}
+
 .parallax-header-title{
   color: #ccc;
   display: inline-block;
@@ -89,4 +97,8 @@
   border-color: #666;
   font-family: 'Open Sans', sans-serif;
   box-shadow: 0px 0px 9px black;
+}
+
+.parallax-overlay-content h2{
+	color: #efefef;
 }
