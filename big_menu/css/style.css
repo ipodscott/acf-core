@@ -1,0 +1,68 @@
+.big-menu-overlay{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 999;
+}
+
+.big-menu-box{
+	display: flex;
+	flex-wrap: wrap;
+	position: fixed;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	margin: 0 auto;
+	width: calc(100vw - 40px);
+	height: 100vh;
+}
+
+.big-menu-box .wp-block-columns{
+	max-width: 1200px;
+	margin-left: 40px;
+	width: calc(100vw - 40px);
+} 
+
+.big-menu-overlay.show{
+	display: block;
+	opacity: 1;
+}
+
+.big-menu-box p{
+	color: #fff;
+}
+
+.close-big-menu{
+	display: none;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 24px;
+	height: auto;
+	cursor: pointer;
+	z-index: 999;
+}
+
+.big-menu-btn{
+	display: flex;
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+	top: 20px;
+	left: 20px;
+	z-index: 999;
+	width: 24px;
+	height: 24px;
+	padding: 10px;
+	border-radius: 50%;
+	background-color: #000;
+	fill:#fff;
+	cursor: pointer;
+}

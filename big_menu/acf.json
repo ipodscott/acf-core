@@ -1,0 +1,43 @@
+[
+    {
+        "key": "group_6255c8563ef46",
+        "title": "Side Navigation",
+        "fields": [
+            {
+                "key": "field_6255c88b7fdf2",
+                "label": "Side Navigation",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "This will add a cool sliding menu to the left side of the page. The links use the default WordPress menu builder <a href=\"nav-menus.php\" target=\"_blank\">here.<\/a>",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/side-navigation"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]

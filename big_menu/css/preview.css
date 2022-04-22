@@ -1,0 +1,33 @@
+.big-menu-overlay{
+	background-color: #000;
+}
+
+.big-menu-box{
+	background-color: #000;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	}
+
+.big-menu-overlay.show{
+	background-color: #000;
+}
+
+
+.close-big-menu{
+	display: none;
+}
+
+.big-menu-btn{
+	display: none;
+}
+
+
+.big-menu-box .wp-block-columns{
+	max-width: 750px !important;
+	width: calc(80vw - 40px);
+	margin: 0 auto !important;
+} 
