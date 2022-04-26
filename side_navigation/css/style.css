@@ -63,8 +63,9 @@
     list-style: none
 }
 
-.menu ul li {
-    display: block;
+.menu.side-menu ul li {
+    display: flex !important;
+    align-items: center;
     color: #efefef;
     font-weight: 300;
     text-transform: uppercase;
@@ -72,7 +73,8 @@
     transition: all 0.5s;
     letter-spacing: .25em;
     font-weight: 700;
-    text-indent: 10px
+    text-indent: 10px;
+    height: 40px;
 }
 
 .menu ul li a {
@@ -81,6 +83,20 @@
     padding: 10px;
     text-decoration: none;
     color: #efefef
+}
+
+.menu p{
+	padding: 0 20px 0 20px;
+	line-height: 1.25em;
+	font-size: 16px;
+}
+
+.wp-block-navigation-item.has-child{}
+
+.wp-block-navigation-item.has-child ul{
+	border: none !important;
+	background-color: #000 !important;
+	width: 100% !important;
 }
 
 .menu ul li:hover {
@@ -93,8 +109,17 @@
     text-transform: uppercase;
     padding: 10px;
     color: #999;
-    font-size: 18px
+    font-size: 18px;
 }
+
+.menu.side-menu h2{
+	font-family: 'Lato',sans-serif;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 18px;
+	padding: 10px 0 10px 0;
+}
+
 
 .close-menu {
     position: absolute;

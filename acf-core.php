@@ -113,3 +113,15 @@ function admin_material_fonts() {
 	wp_enqueue_style( 'material_fonts', '//fonts.googleapis.com/css2?family=Material+Icons&display=swap',false,'1.1','all');
 	}
 add_action('admin_footer', 'admin_material_fonts');
+
+//Setup AcfCore Block Patterns
+
+register_block_pattern_category(
+    'acfcore',
+    array( 'label' => __( 'ACF Core Patterns', 'wpdocs-my-plugin' ) )
+);
+
+include_once 'block_patterns/call_to_action_gallery.php';
+include_once 'block_patterns/video_gallery_pattern.php';
+include_once 'block_patterns/two_column_media.php';
+include_once 'block_patterns/parallax_header_block_pattern.php';

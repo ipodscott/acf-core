@@ -42,9 +42,9 @@
 .close-big-menu{
 	display: none;
 	position: absolute;
-	top: 20px;
-	right: 20px;
-	width: 24px;
+	top: 25px;
+	left: 25px;
+	width: 40px;
 	height: auto;
 	cursor: pointer;
 	z-index: 999;
@@ -52,17 +52,37 @@
 
 .big-menu-btn{
 	display: flex;
+	flex-wrap: wrap;
 	position: fixed;
 	justify-content: center;
 	align-items: center;
 	top: 20px;
 	left: 20px;
 	z-index: 999;
-	width: 24px;
-	height: 24px;
+	width: 28px;
+	height: 28px;
 	padding: 10px;
 	border-radius: 50%;
 	background-color: #000;
 	fill:#fff;
 	cursor: pointer;
+}
+
+.big-menu-btn div {
+	width: 90%;
+	height:auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.big-menu-btn div span{
+	height: 1px;
+	margin: 3px 0 3px 0;
+	display: block;
+	position: relative;
+	background-color: #fff;
+	width: 100%;
+	padding: 0;
 }

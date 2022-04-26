@@ -5,7 +5,10 @@
  * This is the template for a Starter Content Block
  */
 
-
+	
+// Add CSS and JS 
+wp_enqueue_style( 'side_menu_style', plugin_dir_url( __FILE__ ) . 'css/style.css',true,'1.1','all' );
+						
 // create id attribute for specific styling
 $id = $block['id'];
 $classes = [''];
@@ -24,7 +27,7 @@ $classes = [''];
 	
 	<svg class="menu-btn"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
 	
-	<div class="menu shadow">
+	<div class="menu side-menu shadow">
 
 <?php endif; ?>
 
