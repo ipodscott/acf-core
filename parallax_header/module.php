@@ -12,7 +12,8 @@
 	'enqueue_style'     =>  plugin_dir_url( __FILE__ ). 'css/parallax.css',
 	'enqueue_script'    =>  plugin_dir_url( __FILE__ ). 'js/parallax.js', array('jquery'), '1.0', true,
 	'supports'		=> [
-		'align'			=> false,
+		'mode' => 'auto',
+		'align' => array( 'full' ),
 		'anchor'		=> true,
 		'customClassName'	=> true,
 		'jsx' 			=> true,

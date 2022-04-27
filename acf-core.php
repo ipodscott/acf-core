@@ -120,7 +120,7 @@ register_block_pattern_category(
     'acfcore',
     array( 'label' => __( 'ACF Core Patterns', 'wpdocs-my-plugin' ) )
 );
-
+// ACFCore Patterns
 include_once 'block_patterns/call_to_action_gallery.php';
 include_once 'block_patterns/video_gallery_pattern.php';
 include_once 'block_patterns/two_column_media.php';

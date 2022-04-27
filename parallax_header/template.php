@@ -8,22 +8,24 @@
 
 // create id attribute for specific styling
 $id = $block['id'];
-$classes = [''];
-	
-	if( !empty( $block['className'] ) )
-	    $classes = array_merge( $classes, explode( ' ', $block['className'] ) );
-		$anchor = '';
-	if( !empty( $block['anchor'] ) )
-		$anchor = '' . sanitize_title( $block['anchor'] ) . '';
-		
-	$background_image = get_field('background_image');
-	$parallax_speed = get_field('parallax_speed');
+if( !empty($block['anchor']) ) {
+    $id = $block['anchor'];
+}
+
+// Create class attribute allowing for custom "className" and "align" values.
+$className = 'main-parallax-box';
+if( !empty($block['className']) ) {
+    $className .= ' ' . $block['className'];
+}
+if( !empty($block['align']) ) {
+    $className .= ' align' . $block['align'];
+}
 	
  
 ?>
 
 
- <div style="height: <?php the_field( 'vertical_height' ); ?>" class="main-parallax-box">
+ <div style="height: <?php the_field( 'vertical_height' ); ?>" class=" <?php echo esc_attr($className); ?>">
 	 
 	<?php if(get_field('layered_parallax_images')): ?>
 	<?php 
