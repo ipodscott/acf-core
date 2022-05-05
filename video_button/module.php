@@ -18,6 +18,25 @@
 		]
 ));
 
+	if( ! function_exists('add_video_layer') && ! function_exists('video_btn_preview')) {
+	
+		add_action('wp_footer', 'add_video_layer');
+		function add_video_layer(){ // Add video footer
+			require_once( plugin_dir_path( __FILE__ ) . '/video-footer.php');
+		};
+		
+		// Add Video CSS and JS 
+		wp_enqueue_style( 'vid_button_style', plugin_dir_url( __FILE__ ) . 'css/video-btn.css',true,'1.1','all' );
+		wp_enqueue_script( 'video.js', plugin_dir_url( __FILE__ ) .  'js/video-btn.js', array('jquery'), '1.0', true );
+		
+		function video_btn_preview() 
+		{ // Adds video styles to preview content in the backend.
+		    wp_enqueue_style( 'vid_button_style', plugin_dir_url( __FILE__ ) . 'css/video-btn.css',true,'1.1','all' );
+		}
+		add_action('admin_footer', 'video_btn_preview');	
+	}
+
+
 
 // Read local acf.json
 $acf_json_data = ( plugin_dir_path( __FILE__ ) . 'acf.json' );

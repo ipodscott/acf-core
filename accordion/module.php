@@ -20,6 +20,21 @@ acf_register_block( array(
       'jsx'             => true,
    ]
 ) );
+
+
+if( ! function_exists('accordion_preview')) {
+	 	
+		// Add Accordion CSS and JS 
+		wp_enqueue_style( 'accordion_style', plugin_dir_url( __FILE__ ) . 'css/style.css',true,'1.1','all' );
+		wp_enqueue_script( 'accordion_js', plugin_dir_url( __FILE__ ) .  'js/script.js', array('jquery'), '1.0', true );
+		
+		function accordion_preview() 
+		{ // Add accordion preview content in the backend.
+		    wp_enqueue_style( 'accordion_preview_style', plugin_dir_url( __FILE__ ) . 'css/style.css',true,'1.1','all' );
+		}
+		add_action('admin_footer', 'accordion_preview');	
+	}
+
 // Read local acf.json
 $acf_json_data = ( plugin_dir_path( __FILE__ ) . 'acf.json' );
 $custom_fields = $acf_json_data ? json_decode( file_get_contents( $acf_json_data ), true ) : array();

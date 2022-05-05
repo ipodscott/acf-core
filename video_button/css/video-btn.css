@@ -231,25 +231,26 @@ img.vid-btn-img{
     margin: 0 auto 1.25em auto;
     align-items: center;
     position: relative;
+    clear: both;
     border-style: solid;
     border-width: 1px;
     border-color: #333;
-    background-color: #efefef;
+    background-color: #252525;
     text-transform: uppercase;
     font-size: 10px;
     height: 40px;
     font-weight: 700;
     letter-spacing: 0.1em;
     cursor: pointer;
-    width: calc(100% - 2px);
+	min-width: calc(100% - 22px);
     clear: both;
     transition: all 0.5s;
-    color: #333;
+    color: #efefef;
     box-shadow: none;
     }
     
 .video-btn:hover{
-	background-color: #fff;
+	background-color: #323232;
 }
 
 .video-btn span{
