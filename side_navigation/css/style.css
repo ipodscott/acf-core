@@ -1,158 +1,158 @@
 /* Menu Stuff */
 .menu-btn {
-    position: fixed;
-    display: flex;
-	align-items: center;
-	justify-content: center;
-    top: 10px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    cursor: context-menu;
-    opacity: .6;
-    transition: all 0.5s;
-    background-color: #000;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    text-align: center;
-    fill:#fff;
-    text-align: center;
-    padding-left: 6px;
-    padding-top: 6px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: context-menu;
+  opacity: 0.6;
+  transition: all 0.5s;
+  background-color: #000;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  text-align: center;
+  fill: #fff;
+  text-align: center;
+  padding-left: 6px;
+  padding-top: 6px;
+  z-index: 999;
 }
 
-.menu-btn path{
+.menu-btn path {
 }
 
 .menu-btn:hover {
-    opacity: 1
-}
-
-.menu-title{
-	display: block;
-	position: relative;
-	clear: both;
-}
-
-.main-menu{
-	display: block;
-	position: relative;
-}
-
-.menu {
-    top: 0;
-    left: -290px;
-    position: fixed;
-    background-color: #111;
-    width: 280px;
-    height: 100%;
-    z-index: 999;
-    color: #efefef;
-    transition: all 0.75s;
-}
-
-.show-menu {
-    left: 0
-}
-
-.menu ul {
-	display: block;
-	position: relative;
-    margin: 0;
-    padding: 0;
-    list-style: none
-}
-
-.menu.side-menu ul li {
-    display: flex !important;
-    align-items: center;
-    color: #efefef;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 12px;
-    transition: all 0.5s;
-    letter-spacing: .25em;
-    font-weight: 700;
-    text-indent: 10px;
-    height: 40px;
-}
-
-.menu ul li a {
-    display: block;
-    position: relative;
-    padding: 10px;
-    text-decoration: none;
-    color: #efefef
-}
-
-.menu p{
-	padding: 0 20px 0 20px;
-	line-height: 1.25em;
-	font-size: 16px;
-}
-
-.wp-block-navigation-item.has-child{}
-
-.wp-block-navigation-item.has-child ul{
-	border: none !important;
-	background-color: #000 !important;
-	width: 100% !important;
-}
-
-.menu ul li:hover {
-    background-color: #333
+  opacity: 1;
 }
 
 .menu-title {
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 10px;
-    color: #999;
-    font-size: 18px;
+  display: block;
+  position: relative;
+  clear: both;
 }
 
-.menu.side-menu h2{
-	font-family: 'Lato',sans-serif;
-	text-transform: uppercase;
-	font-weight: normal;
-	font-size: 18px;
-	padding: 10px 0 10px 0;
+.main-menu {
+  display: block;
+  position: relative;
 }
 
+.menu {
+  top: 0;
+  left: -290px;
+  position: fixed;
+  background-color: #111;
+  width: 280px;
+  height: 100%;
+  z-index: 999;
+  color: #efefef;
+  transition: all 0.75s;
+}
+
+.show-menu {
+  left: 0;
+}
+
+.menu ul {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu.side-menu ul li {
+  display: flex !important;
+  align-items: center;
+  color: #efefef;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: all 0.5s;
+  letter-spacing: 0.25em;
+  font-weight: 700;
+  text-indent: 10px;
+  height: 40px;
+}
+
+.menu ul li a {
+  display: block;
+  position: relative;
+  padding: 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.menu p {
+  padding: 0 20px 0 20px;
+  line-height: 1.25em;
+  font-size: 16px;
+}
+
+.wp-block-navigation-item.has-child {
+}
+
+.wp-block-navigation-item.has-child ul {
+  border: none !important;
+  background-color: #000 !important;
+  width: 100% !important;
+}
+
+.menu ul li:hover {
+  background-color: #333;
+}
+
+.menu-title {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px;
+  color: #999;
+  font-size: 18px;
+}
+
+.menu.side-menu h2 {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 10px 0 10px 0;
+}
 
 .close-menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 24px;
-    height: auto;
-    opacity: .6;
-    transition: all 0.5s;
-    cursor: pointer;
-    z-index: 999;
-    border-radius:0 0 6px 0px;
-    background-color: #000;
-    padding: 5px 8px 5px 10px;
-    
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: auto;
+  opacity: 0.6;
+  transition: all 0.5s;
+  cursor: pointer;
+  z-index: 999;
+  border-radius: 0 0 6px 0px;
+  background-color: #000;
+  padding: 5px 8px 5px 10px;
 }
 
-.menu.show-menu .close-menu{
-	right: -39px;
+.menu.show-menu .close-menu {
+  right: -39px;
 }
 
 .close-menu:hover {
-    opacity: 1
+  opacity: 1;
 }
 
 .menu-layer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color:#000;
-    z-index: 999;
-    display: none;
-    opacity: .8
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 999;
+  display: none;
+  opacity: 0.8;
 }
