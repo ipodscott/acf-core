@@ -12,4 +12,4 @@ Update 211028: Added an Attributes to help with integation of animation librarie
 
 Each module is completely self contained and includes it's own JSON, JS and CSS dependencies and can be installed on any site that's using the pro version of Advanced Custom Fields.
 
-**This was originally built as part of a theme and I'm in the process of converting it to a plugin so there is some optimization and fixes that I'm in the process of adding...**
+**This was originally built as part of a theme and I'm in the process of converting it to a plugin so there is some optimization and fixes that I'm in the process of adding.**
