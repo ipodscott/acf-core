@@ -61,6 +61,10 @@
 	margin-bottom: 20px;
 }
 
+.acc-body p:last-child{
+	padding-bottom: 0;
+}
+
 .acc-body .block-editor-inner-blocks{
 	position: relative;
 	clear: both;

@@ -66,7 +66,6 @@
 	 		$poster = 'https://img.youtube.com/vi/'.$youtube_id.'/maxresdefault.jpg';
 	 	endif; 
 	 	
-	 	
 	  elseif( $source == 'vimeo' ): 
 	 	$vid_source = 'tube-link';
 	 	$vid_origin = 'https://player.vimeo.com/video/'.$vimeo_id.'?autoplay=1';
