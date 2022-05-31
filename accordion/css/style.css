@@ -9,13 +9,16 @@
 	padding: 15px 20px 14px 20px;
 	background-color: #252525;
 	border-style: solid;
-    border-width: 1px 0 1px 0;
+    border-width: 1px 0 0 0;
     border-color: #4e4e4e;
-    margin-top: -1px;
     font-size: 12px;
     letter-spacing: 0.25em;
     transition: all 0.5s;
     color: #efefef;
+}
+
+.acc-head.last{
+	border-width: 1px 0 1px 0;
 }
 
 .acc-head.active{
@@ -50,7 +53,7 @@
 	padding: 20px 20px 5px 20px;
 	background-color: #000;
 	border-style: solid;
-    border-width: 0 0 1px 0;
+    border-width: 0 0 0 0;
     border-color: #333;
     color: #000;
     margin-top: 0;
@@ -77,6 +80,7 @@
 
 .acc-body.active{
 	display: block;
+	border-width: 0 0 0 0;
 }
 
 .acc-body p{
@@ -85,8 +89,4 @@
 
 .acc-body p:first-child{
 	margin-top: 0 ;
-}
-
-.acc-body .audio-btn:last-child{
-	margin-bottom: 0;
 }
