@@ -42,21 +42,25 @@
 	    $width = $image['sizes'][ $size . '-width' ];
 	    $height = $image['sizes'][ $size . '-height' ];
 	elseif(!$image):
-		$img_url = 'https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW91bnRhaW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60';
+		$img_url = plugin_dir_url( __FILE__ ) . '/images/monuntains.avif';
     endif; 
 		
 	if( $source == 'mp4_upload' ) : 
 		$vid_source = 'mp4-link';
 		$vid_origin = $mp4_upload;
 		$poster = $img_url;
+	 
 	 elseif( $source == 'remote_mp4' ): 
 	 	$vid_source = 'mp4-link';
 	 	$vid_origin = $mp4_remote;
 	 	$poster = $img_url;
+	 
 	 elseif( $source == 'wistia' ): 
 	 	$vid_source = 'tube-link';
 	 	$vid_origin = 'https://fast.wistia.net/embed/iframe/'.$wistia_id.'?videoFoam=true';
-	  elseif( $source == 'youtube' ): 
+		$poster = $img_url;
+	 
+	 elseif( $source == 'youtube' ): 
 	 	$vid_source = 'tube-link';
 	 	$vid_origin = 'https://www.youtube.com/embed/'.$youtube_id.'?autoplay=1';
 	 	
@@ -69,7 +73,13 @@
 	  elseif( $source == 'vimeo' ): 
 	 	$vid_source = 'tube-link';
 	 	$vid_origin = 'https://player.vimeo.com/video/'.$vimeo_id.'?autoplay=1';
-	 	$poster = $img_url;
+		
+		if( $use_custom_thumbnail ):
+			$poster = $custom_thumbnail;
+		elseif( !$use_custom_thumbnail ):
+			$poster = 'https://vumbnail.com/'.$vimeo_id.'.jpg';
+		endif; 
+		 
 	  elseif( $source == 'pbs_player' ): 
 	 	$vid_source = 'tube-link';
 	 	$vid_origin = 'https://player.pbs.org/widget/partnerplayer/'.$pbs_player_url.'/?chapterbar=false&endscreen=true';

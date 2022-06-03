@@ -139,8 +139,32 @@
                         },
                         {
                             "field": "field_606606753de5f",
-                            "operator": "!=",
-                            "value": "youtube"
+                            "operator": "==",
+                            "value": "remote_mp4"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_613b95fba846e",
+                            "operator": "==",
+                            "value": "image"
+                        },
+                        {
+                            "field": "field_606606753de5f",
+                            "operator": "==",
+                            "value": "mp4_upload"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_613b95fba846e",
+                            "operator": "==",
+                            "value": "image"
+                        },
+                        {
+                            "field": "field_606606753de5f",
+                            "operator": "==",
+                            "value": "wistia"
                         }
                     ]
                 ],
@@ -173,6 +197,13 @@
                             "field": "field_606606753de5f",
                             "operator": "==",
                             "value": "youtube"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_606606753de5f",
+                            "operator": "==",
+                            "value": "vimeo"
                         }
                     ]
                 ],
