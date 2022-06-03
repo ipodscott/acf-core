@@ -57,7 +57,7 @@
 	 
 	 elseif( $source == 'wistia' ): 
 	 	$vid_source = 'tube-link';
-	 	$vid_origin = 'https://fast.wistia.net/embed/iframe/'.$wistia_id.'?videoFoam=true';
+	 	$vid_origin = 'https://fast.wistia.net/embed/iframe/'.$wistia_id.'?videoFoam=true&autoplay=true';
 		$poster = $img_url;
 	 
 	 elseif( $source == 'youtube' ): 
