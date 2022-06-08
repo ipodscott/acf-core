@@ -32,6 +32,11 @@
 			$('.myVideo').attr("src", "empty");
 			$('.myVideo').hide();
 			$('.vidFrame').show();
+			
+			$('.play_audio.active, .list-group-item.active').removeClass('active');
+			$('.image-audio-btn.active').removeClass('active');
+			$("#audio")[0].pause();
+			$('.audio_footer').removeClass('show');
 		});
 		
 		
@@ -44,6 +49,11 @@
 			$('.myVideo').show(function(){
 				 document.getElementById('myVideo').play();
 			});	
+			
+			$('.play_audio.active, .list-group-item.active').removeClass('active');
+			$('.image-audio-btn.active').removeClass('active');
+			$("#audio")[0].pause();
+			$('.audio_footer').removeClass('show');
 		});
 		
 		
