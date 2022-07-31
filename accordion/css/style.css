@@ -2,20 +2,20 @@
 	display: flex;
 	position: relative;
 	text-transform: uppercase;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 	width: calc(100% - 42px);
 	padding: 15px 20px 14px 20px;
 	background-color: #252525;
 	border-style: solid;
-    border-width: 1px 0 0 0;
-    border-color: #4e4e4e;
-    font-size: 12px;
-    letter-spacing: 0.25em;
-    transition: all 0.5s;
-    color: #efefef;
-		cursor: pointer;
+  border-width: 1px 0 0 0;
+  border-color: #4e4e4e;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  transition: all 0.5s;
+  color: #efefef;
+	cursor: pointer;
 }
 
 .acc-head.last{
@@ -47,13 +47,13 @@
 }
 
 .acc-body{
-	display: none;
-	flex-wrap: wrap;
-	position: relative;
-	width: calc(100% - 42px);
-	padding: 20px 20px 5px 20px;
-	background-color: #000;
-	border-style: solid;
+		display: none;
+		flex-wrap: wrap;
+		position: relative;
+		width: calc(100% - 42px);
+		padding: 20px 20px 5px 20px;
+		background-color: #000;
+		border-style: solid;
     border-width: 0 0 0 0;
     border-color: #333;
     color: #000;
