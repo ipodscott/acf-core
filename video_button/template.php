@@ -105,9 +105,9 @@
 	
 <?php  elseif( $button_type == 'text' ): ?>
 	
-	<span class="video-btn <?php echo esc_attr($className); ?> <?php echo $vid_source; ?> <?php echo $resolution; ?>" vidURL="<?php echo $vid_origin; ?>">
+	<div class="video-btn <?php echo esc_attr($className); ?> <?php echo $vid_source; ?> <?php echo $resolution; ?>" vidURL="<?php echo $vid_origin; ?>">
 		<span><i class="material-icons">video_label</i>  <?php echo $button_title; ?></span>
-	</span>
+	</div>
 	
 	
 	<?php  else: ?>

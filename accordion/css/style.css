@@ -15,6 +15,7 @@
     letter-spacing: 0.25em;
     transition: all 0.5s;
     color: #efefef;
+		cursor: pointer;
 }
 
 .acc-head.last{

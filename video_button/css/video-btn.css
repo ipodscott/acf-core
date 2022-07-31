@@ -228,7 +228,7 @@ img.vid-btn-img{
 .video-btn{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto 1.25em auto;
+    margin: 0 auto 20px auto !important;
     align-items: center;
     position: relative;
     clear: both;
@@ -242,8 +242,7 @@ img.vid-btn-img{
     font-weight: 700;
     letter-spacing: 0.1em;
     cursor: pointer;
-	min-width: calc(100% - 22px);
-    clear: both;
+	  min-width: calc(100% - 22px);
     transition: all 0.5s;
     color: #efefef;
     box-shadow: none;
