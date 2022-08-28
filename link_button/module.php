@@ -5,7 +5,7 @@
 	'title'				=> __('Link Button'),
 	'description'		=> __('Block for link button'),
 	'render_template' => plugin_dir_path( __FILE__ ) . 'template.php',
-	'category'			=> 'custom-blocks',
+	'category'			=> 'acf-core-blocks',
 	'mode'			    => 'preview',
 	'icon'				=> 'admin-links',
 	'keywords'			=> array( 'columns' ),

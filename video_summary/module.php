@@ -6,7 +6,7 @@ acf_register_block( array(
    'description'     => __( 'Video Copy' ),
    'render_template' => plugin_dir_path( __FILE__ ) . 'template.php',
    'mode'            => 'preview',
-   'category'        => 'custom-blocks',
+   'category'        => 'acf-core-blocks',
    'multiple'        => true,
    'icon'            => 'align-pull-left',
    'keywords'        => array( 'accordion' ),

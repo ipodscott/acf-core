@@ -6,7 +6,7 @@ acf_register_block( array(
    'description'     => __( 'Slide description' ),
    'render_template' => plugin_dir_path( __FILE__ ) . 'template.php',
    'mode'            => 'preview',
-   'category'        => 'custom-blocks',
+   'category'        => 'acf-core-blocks',
    'multiple'        => true,
    'icon'            => 'slides',
    'keywords'        => array( 'accordion' ),

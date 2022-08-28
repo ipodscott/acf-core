@@ -44,35 +44,21 @@ function my_acf_init()
   }
 }
 
-function my_block_category($categories, $post)
-{
-  return array_merge($categories, [
-    [
-      "slug" => "custom-blocks",
-      "title" => __("Custom Blocks", "custom-blocks"),
-      "icon" => "layout",
-    ],
-  ]);
+
+function my_plugin_block_categories( $categories, $post ) {
+
+  $acf_core = array(
+    "slug" => "acf-core-blocks",
+    "title" => __("ACF Core Blocks", "acf-core-blocks"),
+    "icon" => "layout",
+  );
+
+  array_unshift( $categories, $acf_core );
+  return $categories;
 }
-add_filter("block_categories", "my_block_category", 3, 2);
+add_filter( 'block_categories', 'my_plugin_block_categories', 10, 2 );
 
-function custom_block_category($categories)
-{
-  $custom_block = [
-    "slug" => "my-blocks",
-    "title" => __("My Test Blocks", "my-blocks"),
-  ];
 
-  $categories_sorted = [];
-  $categories_sorted[0] = $custom_block;
-
-  foreach ($categories as $category) {
-    $categories_sorted[] = $category;
-  }
-
-  return $categories_sorted;
-}
-add_filter("block_categories", "custom_block_category", 10, 2);
 
 function advanced_custom_field_excerpt()
 {

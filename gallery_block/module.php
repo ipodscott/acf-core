@@ -1,12 +1,12 @@
 <?php
-	
+
 	// Create Block Attributes
 	acf_register_block(array(
 	'name'				=> 'gallery_block',
 	'title'				=> __('Gallery Block'),
 	'description'		=> __('Block for gallery slideshow'),
 	'render_template' => plugin_dir_path( __FILE__ ) . 'template.php',
-	'category'			=> 'custom-blocks',
+	'category'			=> 'acf-core-blocks',
 	'icon'				=> 'format-gallery',
 	'mode'				=> 'auto',
 	'keywords'			=> array( 'columns' ),

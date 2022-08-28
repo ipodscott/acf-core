@@ -1,15 +1,15 @@
 <?php
-	
+
 	// Create Block Attributes
 	acf_register_block(array(
 	'name'				=> 'elementor_block',
 	'title'				=> __('Elementor Block'),
 	'description'		=> __('Elementor Block'),
 	'render_template' => plugin_dir_path( __FILE__ ) . 'template.php',
-	'category'			=> 'custom-blocks',
+	'category'			=> 'acf-core-blocks',
 	'icon'				=> 'slides',
 	'keywords'			=> array( 'slide' ),
-));	
+));
 
 // Read local acf.json
 $acf_json_data = ( plugin_dir_path( __FILE__ ) . 'acf.json' );
