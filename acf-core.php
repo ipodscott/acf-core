@@ -56,7 +56,7 @@ function my_plugin_block_categories( $categories, $post ) {
   array_unshift( $categories, $acf_core );
   return $categories;
 }
-add_filter( 'block_categories', 'my_plugin_block_categories', 10, 2 );
+add_filter( 'block_categories_all', 'my_plugin_block_categories', 10, 2 );
 
 
 
