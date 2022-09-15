@@ -16,6 +16,9 @@
 	if( !empty($block['className']) ) {
 	    $className .= ' ' . $block['className'];
 	}
+	if( !empty($block['align']) ) {
+		$className .= ' align' . $block['align'];
+	}
 	
 
 	$button_type = get_field('button_type');
