@@ -97,7 +97,15 @@
 <div class="image-vid-btn <?php echo esc_attr($className); ?>">
 	    <div class="image-vid-link <?php echo $vid_source; ?> <?php echo $resolution; ?>" vidurl="<?php echo $vid_origin; ?>" >
         <img class="vid-btn-img" style="background-image: url('<?php echo $poster; ?>')"  src="<?php echo plugin_dir_url( __FILE__ ); ?>images/video_thumb.gif"/>
-        <div class="vid-title"><svg class="vid-play-btn" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><g><rect fill="none" height="24" width="24"/></g><g><path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M9.5,16.5v-9l7,4.5L9.5,16.5z"/></g></svg></div>
+        <div class="vid-title">
+<svg class="vid-btn-icon" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48">
+<path d="M45.9,14.6c-1.2-2.9-3-5.4-5.1-7.7c-2.1-2.2-4.7-3.8-7.6-5.1S27.2,0,23.9,0c-3.2,0-6.3,0.6-9.3,1.9S9.2,4.8,7,6.9
+	s-3.8,4.7-5.1,7.7S0,20.6,0,23.9c0,3.2,0.6,6.3,1.9,9.3c1.3,3,3,5.5,5.1,7.7c2.1,2.2,4.7,3.8,7.6,5.1s6,1.9,9.3,1.9s6.4-0.6,9.3-1.9
+	s5.4-3,7.6-5.1c2.1-2.2,3.8-4.7,5.1-7.7s1.9-6,1.9-9.3C47.8,20.6,47.2,17.5,45.9,14.6z M38.2,38.3c-3.9,4-8.7,6-14.3,6
+	s-10.4-2-14.3-6s-6-8.7-6-14.4s2-10.5,6-14.4c3.9-4,8.7-6,14.3-6s10.5,2,14.3,6s6,8.7,6,14.4S42.1,34.4,38.2,38.3z M18.1,13.8
+	L34,23.9L18.1,34.1V13.8z"/>
+</svg>
+</div>
 		</div>
 		
 		<?php if($button_title) : ?>
@@ -109,7 +117,7 @@
 <?php  elseif( $button_type == 'text' ): ?>
 	
 	<div class="video-btn <?php echo esc_attr($className); ?> <?php echo $vid_source; ?> <?php echo $resolution; ?>" vidURL="<?php echo $vid_origin; ?>">
-		<span><i class="material-icons">video_label</i>  <?php echo $button_title; ?></span>
+		<span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" ><path d="M0 0h24v24H0V0z" fill="none"/><path style="fill:#efefef;" d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/></svg>  <?php echo $button_title; ?></span>
 	</div>
 	
 	
