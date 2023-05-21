@@ -9,7 +9,9 @@
     width:100%;
     height:100vh;
     z-index:999;
-    display:none;
+    transition: opacity 500ms;
+    opacity: 0;
+    display: none;
 }
 .movie-box{
     top:0px;
