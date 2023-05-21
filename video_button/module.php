@@ -27,7 +27,7 @@
 
 		// Add Video CSS and JS
 		wp_enqueue_style( 'vid_button_style', plugin_dir_url( __FILE__ ) . 'css/video-btn.css',true,'1.1','all' );
-		wp_enqueue_script( 'video.js', plugin_dir_url( __FILE__ ) .  'js/video-btn.js', array('jquery'), '1.0', true );
+		wp_enqueue_script( 'video.js', plugin_dir_url( __FILE__ ) .  'js/video-btn-min.js', array('jquery'), '1.0', true );
 
 		function video_btn_preview()
 		{ // Adds video styles to preview content in the backend.
