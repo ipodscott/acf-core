@@ -9,7 +9,9 @@
 	'category'			=> 'acf-core-blocks',
 	'multiple'          => true,
 	'icon'				=> '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/></svg>',
-	'keywords'			=> array( 'slide' ),
+	'keywords'			=> array( 'video' ),
+	'enqueue_style'     =>  plugin_dir_url( __FILE__ ). 'css/video-btn-min.css',
+	'enqueue_script'    =>  plugin_dir_url( __FILE__ ). 'js/video-btn-min.js', array(), '1.0', true,
 	'supports'		=> [
 		'align'			=> true,
 		'anchor'		=> true,
@@ -24,16 +26,6 @@
 		function add_video_layer(){ // Add video footer
 			require_once( plugin_dir_path( __FILE__ ) . '/video-footer.php');
 		};
-
-		// Add Video CSS and JS
-		wp_enqueue_style( 'vid_button_style', plugin_dir_url( __FILE__ ) . 'css/video-btn.css',true,'1.1','all' );
-		wp_enqueue_script( 'video.js', plugin_dir_url( __FILE__ ) .  'js/video-btn-min.js', array('jquery'), '1.0', true );
-
-		function video_btn_preview()
-		{ // Adds video styles to preview content in the backend.
-		    wp_enqueue_style( 'vid_button_style', plugin_dir_url( __FILE__ ) . 'css/video-btn.css',true,'1.1','all' );
-		}
-		add_action('admin_footer', 'video_btn_preview');
 	}
 
 
