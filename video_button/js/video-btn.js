@@ -1,143 +1,261 @@
-(function($){
-	$( document ).ready(function() {
-		
-		function videoChange(){
-			$('.default-video-cover').fadeOut(500);
-			
-			$('.vid-box').fadeOut(500, function(){
-				$('.vid-box').delay(500).fadeIn(500);
-			});
-		
-			$('.main-menu').delay(500).fadeOut(500, function(){
-				$('.menu-overlay').fadeOut(500);
-			});
-		}
-		
-		
-		 $(".video-menu li").click(function() {
-	        $(".video-menu li").removeClass("show");
-	        $(this).addClass("show")
-	    });	
-	    
-	    $(".image-vid-btn").click(function() {
-	       $('.play_audio.active, .list-group-item.active').removeClass('active');
-		   $("#audio")[0].pause();
-		   $('.audio_footer').removeClass('show'); 
-	    });	
-		
-	
-		$( ".tube-link" ).click(function() {
-			$('body').addClass('stop-scroll');
-			$('.vidFrame').attr("src", $(this).attr("vidUrl"));
-			$('.myVideo').attr("src", "empty");
-			$('.myVideo').hide();
-			$('.vidFrame').show();
-			
-			$('.play_audio.active, .list-group-item.active').removeClass('active');
-			$('.image-audio-btn.active').removeClass('active');
-			$("#audio")[0].pause();
-			$('.audio_footer').removeClass('show');
-		});
-		
-		
-		$( ".mp4-link" ).click(function() {
-			$('body').addClass('stop-scroll');
-			$('.vidFrame, .vidFrame').hide();
-			$('video').removeClass('hide');
-			$('.vidFrame, .vidFrame').attr("src", "empty");
-			$('.myVideo').attr("src", $(this).attr("vidURL"));
-			$('.myVideo').show(function(){
-				 document.getElementById('myVideo').play();
-			});	
-			
-			$('.play_audio.active, .list-group-item.active').removeClass('active');
-			$('.image-audio-btn.active').removeClass('active');
-			$("#audio")[0].pause();
-			$('.audio_footer').removeClass('show');
-		});
-		
-		
-		function videoChange(){
-			$('.default-video-cover').fadeOut(500);
-			
-			$('.vid-box').fadeOut(500, function(){
-				$('.vid-box').delay(500).fadeIn(500);
-			});
-		
-			$('.main-menu').delay(500).fadeOut(500, function(){
-				$('.menu-overlay').fadeOut(500);
-			});
-		}
-		
-		
-		function hideAudio(){
-			$('.audio-btn').removeClass("active");
-	        $('.audio_footer.show, .mini-audio-btn.show').removeClass("show");
-	        document.getElementById('audio').pause();
-		}
-	
-	    
-		$(".sixteen-nine-btn").click(function() {
-	        $(".modal-vid").fadeIn(500);
-	        $(".vid-holder img").removeClass("show");
-	        $(".sixteen-nine").addClass("show"); 
-	    });
-	    
-	    $(".widescreen-btn").click(function() {
-	        $(".modal-vid").fadeIn(500);
-	        $(".vid-holder img").removeClass("show");
-	        $(".widescreen-img").addClass("show"); 
-	    });
-	    
-	    $(".standard-btn").click(function() { 
-	        $(".modal-vid").fadeIn(500);
-	        $(".vid-holder img").removeClass("show");
-	        $(".standard-img").addClass("show");
-	    });
-	    
-	    $(".pal-btn").click(function() { 
-	        $(".modal-vid").fadeIn(500);
-	        $(".vid-holder img").removeClass("show");
-	        $(".pal-img").addClass("show");
-	    });
-	    
-	    $(".na-btn").click(function() {
-	        $(".modal-vid").fadeIn(500);
-	        $(".vid-holder img").removeClass("show");
-	        $(".nat-arch").addClass("show");
-	    });
-	    
-	    $(".vintage-wide-btn").click(function() {
-	        $(".modal-vid").fadeIn(500);
-	        $(".vid-holder img").removeClass("show");
-	        $(".vintage-wide").addClass("show");
-	    });
-		
-		$(".pano-btn").click(function() {
-	        $(".modal-vid").fadeIn(500);
-	        $(".vid-holder img").removeClass("show");
-	        $(".panovision").addClass("show");
-	    });
-	
-	    
-	    $(".close").click(function() { 
-	        $(".modal-vid").fadeOut(500);
-	        /*document.getElementById('myVideo').pause();*/
-	        $('.youTube, .myVideo').attr('src', '');
-	        $('body').removeClass('stop-scroll');
-	    });
-	    
-	    $( ".video-link" ).click(function() {
-			$(".audio-btn.active").removeClass("active");
-			$("#audio")[0].pause();
-			$('.audio_footer, .mini-audio-btn').removeClass('show');
-			$('body').addClass('stop-scroll');
-		});		
-	    
+function videoChange() {
+	var defaultVideoCover = document.querySelector('.default-video-cover');
+	var vidBox = document.querySelectorAll('.vid-box');
+	var mainMenu = document.querySelector('.main-menu');
+	var menuOverlay = document.querySelector('.menu-overlay');
+  
+	fadeOut(defaultVideoCover, 500);
+  
+	Array.from(vidBox).forEach(function(box) {
+	  fadeOut(box, 500, function() {
+		setTimeout(function() {
+		  fadeIn(box, 500);
+		}, 500);
+	  });
 	});
-	
-	
-	 window.document.onkeydown = function (e)
+  
+	setTimeout(function() {
+	  fadeOut(mainMenu, 500, function() {
+		fadeOut(menuOverlay, 500);
+	  });
+	}, 500);
+  }
+  
+  function fadeOut(element, duration, callback) {
+	var opacity = 1;
+	var interval = 50;
+	var delta = interval / duration;
+  
+	var fadeOutInterval = setInterval(function() {
+	  opacity -= delta;
+  
+	  if (opacity <= 0) {
+		opacity = 0;
+		clearInterval(fadeOutInterval);
+  
+		if (typeof callback === 'function') {
+		  callback();
+		}
+	  }
+  
+	  element.style.opacity = opacity;
+	}, interval);
+  }
+  
+  function fadeIn(element, duration, callback) {
+	var opacity = 0;
+	var interval = 50;
+	var delta = interval / duration;
+  
+	var fadeInInterval = setInterval(function() {
+	  opacity += delta;
+  
+	  if (opacity >= 1) {
+		opacity = 1;
+		clearInterval(fadeInInterval);
+  
+		if (typeof callback === 'function') {
+		  callback();
+		}
+	  }
+  
+	  element.style.opacity = opacity;
+	}, interval);
+  }
+  
+
+// Hide Audio if playing and visible
+function hideAudio() {
+    var audioBtnElements = document.querySelectorAll('.audio-btn');
+    audioBtnElements.forEach(function(audioBtn) {
+        audioBtn.classList.remove('active');
+    });
+
+    var showElements = document.querySelectorAll('.audio_footer.show, .mini-audio-btn.show');
+    showElements.forEach(function(showElem) {
+        showElem.classList.remove('show');
+    });
+
+    var audio = document.getElementById('audio');
+    if (audio) {
+        audio.pause();
+    }
+}
+
+// Video Menu
+var videoMenuItems = document.querySelectorAll(".video-menu li");
+
+videoMenuItems.forEach(function(item) {
+  item.addEventListener("click", function() {
+    videoMenuItems.forEach(function(item) {
+      item.classList.remove("show");
+    });
+    this.classList.add("show");
+  });
+});
+
+
+
+// Select the image-vid-btn element and attach a click event listener
+var imageVidBtn = document.querySelector(".image-vid-btn");
+if (imageVidBtn) {
+  imageVidBtn.addEventListener("click", function() {
+    var playAudioActiveElements = document.querySelectorAll(".play_audio.active, .list-group-item.active");
+    playAudioActiveElements.forEach(function(element) {
+      element.classList.remove("active");
+    });
+    var audioElement = document.querySelector("#audio");
+    audioElement.pause();
+    var audioFooter = document.querySelector(".audio_footer");
+    audioFooter.classList.remove("show");
+  });
+}
+
+// Select all tube-link elements and attach click event listeners
+var tubeLinks = document.querySelectorAll(".tube-link");
+tubeLinks.forEach(function(link) {
+  link.addEventListener("click", function() {
+    document.body.classList.add("stop-scroll");
+    var vidFrame = document.querySelector(".vidFrame");
+    vidFrame.setAttribute("src", this.getAttribute("vidUrl"));
+    var myVideo = document.querySelector(".myVideo");
+    myVideo.setAttribute("src", "empty");
+    myVideo.style.display = "none";
+    vidFrame.style.display = "block";
+
+    var playAudioActiveElements = document.querySelectorAll(".play_audio.active, .list-group-item.active, .image-audio-btn.active");
+    playAudioActiveElements.forEach(function(element) {
+      element.classList.remove("active");
+    });
+    var audioElement = document.querySelector("#audio");
+    audioElement.pause();
+    var audioFooter = document.querySelector(".audio_footer");
+    audioFooter.classList.remove("show");
+  });
+});
+
+// Select all mp4-link elements and attach click event listeners
+var mp4Links = document.querySelectorAll(".mp4-link");
+mp4Links.forEach(function(link) {
+  link.addEventListener("click", function() {
+    document.body.classList.add("stop-scroll");
+    var vidFrames = document.querySelectorAll(".vidFrame");
+    vidFrames.forEach(function(frame) {
+      frame.style.display = "none";
+    });
+    var videos = document.querySelectorAll("video");
+    videos.forEach(function(video) {
+      video.classList.remove("hide");
+    });
+    vidFrames.forEach(function(frame) {
+      frame.setAttribute("src", "empty");
+    });
+    var myVideo = document.querySelector(".myVideo");
+    myVideo.setAttribute("src", this.getAttribute("vidURL"));
+    myVideo.style.display = "block";
+    myVideo.addEventListener("loadeddata", function() {
+      this.play();
+    });
+
+    var playAudioActiveElements = document.querySelectorAll(".play_audio.active, .list-group-item.active, .image-audio-btn.active");
+    playAudioActiveElements.forEach(function(element) {
+      element.classList.remove("active");
+    });
+    var audioElement = document.querySelector("#audio");
+    audioElement.pause();
+    var audioFooter = document.querySelector(".audio_footer");
+    audioFooter.classList.remove("show");
+  });
+});
+
+
+//16x9 Button
+
+document.querySelectorAll('.sixteen-nine-btn').forEach(function(element) {
+	element.addEventListener('click', function() {
+		var modalVid = document.querySelector('.modal-vid');
+		modalVid.style.display = 'block';
+		setTimeout(function() {
+			modalVid.style.opacity = '1';
+		}, 1); // 1 millisecond after we make it block display, we start fading in
+
+		var imgElements = document.querySelectorAll('.vid-holder img');
+		imgElements.forEach(function(imgElem) {
+			imgElem.classList.remove('show');
+		});
+
+		var sixteenNine = document.querySelector('.sixteen-nine');
+		sixteenNine.classList.add('show');
+	});
+});
+
+//Dimension Buttons
+var btnsToImgClassMapping = {
+    'widescreen-btn': 'widescreen-img',
+    'standard-btn': 'standard-img',
+    'pal-btn': 'pal-img',
+    'na-btn': 'nat-arch',
+    'vintage-wide-btn': 'vintage-wide',
+    'pano-btn': 'panovision'
+};
+
+Object.keys(btnsToImgClassMapping).forEach(function(btnClass) {
+    var imgClass = btnsToImgClassMapping[btnClass];
+    document.querySelectorAll('.' + btnClass).forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var modalVid = document.querySelector('.modal-vid');
+            modalVid.style.display = 'block';
+            setTimeout(function() {
+                modalVid.style.opacity = '1';
+            }, 1);
+
+            document.querySelectorAll('.vid-holder img').forEach(function(img) {
+                img.classList.remove('show');
+            });
+
+            var image = document.querySelector('.' + imgClass);
+            image.classList.add('show');
+        });
+    });
+});
+
+document.querySelectorAll('.close').forEach(function(closeBtn) {
+    closeBtn.addEventListener('click', function() {
+        var modalVid = document.querySelector('.modal-vid');
+        modalVid.style.opacity = '0';
+        setTimeout(function() {
+            modalVid.style.display = 'none';
+        }, 500);
+
+        document.querySelectorAll('.youTube, .myVideo').forEach(function(video) {
+            video.src = '';
+        });
+
+        document.body.classList.remove('stop-scroll');
+    });
+});
+
+document.querySelectorAll('.video-link').forEach(function(videoLink) {
+    videoLink.addEventListener('click', function() {
+        document.querySelectorAll('.audio-btn.active').forEach(function(btn) {
+            btn.classList.remove('active');
+        });
+
+        var audio = document.getElementById('audio');
+        if (audio) {
+            audio.pause();
+        }
+
+        document.querySelectorAll('.audio_footer, .mini-audio-btn').forEach(function(elem) {
+            elem.classList.remove('show');
+        });
+
+        document.body.classList.add('stop-scroll');
+    });
+});
+
+
+ window.document.onkeydown = function (e)
 	 	{
 		 	if (!e) e = event;
 		 	if (e.keyCode == 27)
@@ -147,5 +265,3 @@
 		 		$('body').removeClass('stop-scroll');
 		 	}
 	 	};
-
-})(jQuery)
