@@ -28,8 +28,6 @@
 		};
 	}
 
-
-
 // Read local acf.json
 $acf_json_data = ( plugin_dir_path( __FILE__ ) . 'acf.json' );
 $custom_fields = $acf_json_data ? json_decode( file_get_contents( $acf_json_data ), true ) : array();

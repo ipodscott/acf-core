@@ -26,7 +26,8 @@ function my_acf_init()
     include_once "audio_button/module.php";
     include_once "big_book/module.php";
     include_once "primary_content_block/module.php";
-    include_once "gallery_block/module.php";
+    //include_once "gallery_block/module.php";
+    include_once "gl_gallery/module.php";
     include_once "large_header/module.php";
     include_once "link_button/module.php";
     include_once "parallax_header/module.php";

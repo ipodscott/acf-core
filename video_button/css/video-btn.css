@@ -1,5 +1,6 @@
 .image-vid-btn {
 	width: 100% !important;
+    flex: 1 1 260px;
 }
 
 .modal-vid{
@@ -112,6 +113,7 @@
 
 .video-thumb-row .image-vid-btn {
 	width: calc(50% - 20px)!important;
+    flex: 1 1 260px;
 }
 
 
