@@ -9,8 +9,10 @@
 	'mode'			    => 'preview',
 	'icon'				=> 'admin-site-alt3',
 	'keywords'			=> array( 'starter' ),
+	'enqueue_style'     =>  plugin_dir_url( __FILE__ ). 'css/style.css',
+	'enqueue_script'    =>  plugin_dir_url( __FILE__ ). 'js/script.js', array(), '1.0', true,
 	'supports'		=> [
-		'align'			=> false,
+		'align'			=> true,
 		'anchor'		=> true,
 		'customClassName'	=> true,
 		'jsx' 			=> true,
