@@ -12,6 +12,7 @@
 	'enqueue_style'     =>  plugin_dir_url( __FILE__ ). 'css/style.css',
 	'enqueue_script'    =>  plugin_dir_url( __FILE__ ). 'js/script.js', array(), '1.0', true,
 	'supports'		=> [
+		'mode'			=> true,
 		'align'			=> true,
 		'anchor'		=> true,
 		'customClassName'	=> true,
