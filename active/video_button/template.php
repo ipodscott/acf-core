@@ -45,7 +45,7 @@
 	    $width = $image['sizes'][ $size . '-width' ];
 	    $height = $image['sizes'][ $size . '-height' ];
 	elseif(!$image):
-		$img_url = plugin_dir_url( __FILE__ ) . '/images/monuntains.avif';
+		$img_url = plugin_dir_url( __FILE__ ) . '/images/monuntains.webp';
     endif; 
 		
 	if( $source == 'mp4_upload' ) : 
@@ -94,9 +94,9 @@
 
 <?php if($button_type == 'image') : ?>
 
-<div class="image-vid-btn <?php echo esc_attr($className); ?>">
+<div class="image-vid-btn alignfull <?php echo esc_attr($className); ?>">
 	    <div class="image-vid-link <?php echo $vid_source; ?> <?php echo $resolution; ?>" vidurl="<?php echo $vid_origin; ?>" >
-        <img class="vid-btn-img" style="background-image: url('<?php echo $poster; ?>')"  src="<?php echo plugin_dir_url( __FILE__ ); ?>images/video_thumb.gif"/>
+        <img decoding="async" loading="lazy" class="vid-btn-img" style="background-image: url('<?php echo $poster; ?>')"  src="<?php echo plugin_dir_url( __FILE__ ); ?>images/video_thumb.webp"/>
         <div class="vid-title">
 <svg class="vid-btn-icon" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48">
 <path d="M45.9,14.6c-1.2-2.9-3-5.4-5.1-7.7c-2.1-2.2-4.7-3.8-7.6-5.1S27.2,0,23.9,0c-3.2,0-6.3,0.6-9.3,1.9S9.2,4.8,7,6.9

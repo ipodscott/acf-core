@@ -1,3 +1,7 @@
+.audio_footer * {
+	box-sizing:unset !important;
+}
+
 .audio-btn{
 	display: flex;
 	margin: 0 auto 1.25em auto;
@@ -120,7 +124,7 @@
 }
 
 .audio-controls svg{
-	width: 28x;
+	width: 28px;
 	padding: 4px 8px 4px 8px;
 	height: 14px;
     text-align: center;

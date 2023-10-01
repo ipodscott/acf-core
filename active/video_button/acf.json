@@ -112,7 +112,6 @@
                     "standard-btn": "Standard",
                     "pano-btn": "Panovision",
                     "pal-btn": "PAL",
-                    "na-btn": "National Archive",
                     "vintage-wide-btn": "Vintage Wide"
                 },
                 "default_value": false,
