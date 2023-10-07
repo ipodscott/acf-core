@@ -276,3 +276,62 @@ window.document.onkeydown = function (e) {
     }
 };
 
+// Jukebox Code
+
+var mp4Links = document.querySelectorAll(".mp4-link");
+mp4Links.forEach(function(link, index) {
+  link.addEventListener("click", function() {
+    document.body.classList.add("stop-scroll");
+
+    var vidFrames = document.querySelectorAll(".vidFrame");
+    vidFrames.forEach(function(frame) {
+      frame.style.display = "none";
+    });
+
+    var videos = document.querySelectorAll("video");
+    videos.forEach(function(video) {
+      video.classList.remove("hide");
+    });
+
+    vidFrames.forEach(function(frame) {
+      frame.setAttribute("src", "empty");
+    });
+
+    var myVideo = document.querySelector(".myVideo");
+    myVideo.setAttribute("src", this.getAttribute("vidURL"));
+    myVideo.style.display = "block";
+
+    myVideo.addEventListener("loadeddata", function() {
+      this.play();
+    });
+
+    myVideo.addEventListener("ended", function() {
+      // Check for a next video link inside the jukebox
+      var jukebox = document.querySelector(".jukebox");
+      var mp4LinksInJukebox = jukebox ? jukebox.querySelectorAll(".mp4-link") : [];
+      var nextLink = mp4LinksInJukebox[index + 1];
+      
+      if (nextLink) {
+        nextLink.click(); // Play the next video
+      }
+
+      // Swap the 'active' class
+      link.classList.remove("active");
+      if (nextLink) {
+        nextLink.classList.add("active");
+      }
+    });
+
+    var playAudioActiveElements = document.querySelectorAll(".play_audio.active, .list-group-item.active, .image-audio-btn.active");
+    playAudioActiveElements.forEach(function(element) {
+      element.classList.remove("active");
+    });
+
+    var audioElement = document.querySelector("#audio");
+    audioElement.pause();
+
+    var audioFooter = document.querySelector(".audio_footer");
+    audioFooter.classList.remove("show");
+  });
+});
+

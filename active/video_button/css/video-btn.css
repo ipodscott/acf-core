@@ -180,7 +180,9 @@
 	cursor: pointer;
 	transition: all 0.5s;
 	margin-bottom: 10px;
-  cursor: pointer;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 
@@ -268,8 +270,9 @@ img.vid-btn-img{
 .video-btn{
     display: flex;
     flex-wrap: wrap;
-    margin: -1px auto 0 auto !important;
-    justify-content: 
+    margin: 0 auto 0 auto !important;
+    padding: 0 8px 0 8px;
+    justify-content: center;
     align-items: center;
     position: relative;
     clear: both;
@@ -315,6 +318,14 @@ img.vid-btn-img{
 	   margin-right: 8px;
 	   margin-left: 5px;
    }
+   
+   .jukebox .video-btn{
+     border-bottom-width: 0;
+   }
+
+.jukebox .video-btn:last-child{
+      border-bottom-width: 1px;
+    }
     
 .vid-main-content {
     position: fixed;
