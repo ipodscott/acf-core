@@ -255,13 +255,24 @@ document.querySelectorAll('.video-link').forEach(function(videoLink) {
 });
 
 
- window.document.onkeydown = function (e)
-	 	{
-		 	if (!e) e = event;
-		 	if (e.keyCode == 27)
-		 	{
-		 		$(".modal-vid").fadeOut(500, function(){});
-		 		$('.youTube, .myVideo').attr('src', '');
-		 		$('body').removeClass('stop-scroll');
-		 	}
-	 	};
+window.document.onkeydown = function (e) {
+    e = e || window.event;
+    if (e.keyCode === 27) {
+        // Hide ".modal-vid"
+        var modalVidElements = document.querySelectorAll('.modal-vid');
+        for (var i = 0; i < modalVidElements.length; i++) {
+            modalVidElements[i].style.display = 'none';
+            // You can add a fade-out transition with CSS if needed
+        }
+
+        // Clear 'src' attribute for '.youTube, .myVideo'
+        var videoElements = document.querySelectorAll('.youTube, .myVideo');
+        for (var j = 0; j < videoElements.length; j++) {
+            videoElements[j].setAttribute('src', '');
+        }
+
+        // Remove 'stop-scroll' class from body
+        document.body.classList.remove('stop-scroll');
+    }
+};
+
