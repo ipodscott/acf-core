@@ -39,7 +39,7 @@ if( $images ): ?>
         <?php foreach( $images as $image ): ?>
         
                     <a href="<?php echo esc_url($image['url']); ?>" class="glightbox">
-                        <img src="<?php echo esc_url($image['sizes']['large']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                        <img class="fade-in-element" src="<?php echo esc_url($image['sizes']['large']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                     </a>
              
         <?php endforeach; ?>

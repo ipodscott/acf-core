@@ -17,6 +17,11 @@
   outline: none;
 }
 
+.gl-gallery a:focus {
+    outline: none !important;
+}
+
+
 .glightbox-container.inactive {
   display: none;
 }
@@ -949,7 +954,7 @@ iframe.wait-autoplay {
   margin: 0;
   padding: 0;
   line-height: 0em;
-  flex: 1 1 640px;
+  flex: 1 1 480px;
 }
 
 .gl-gallery a img{
@@ -960,5 +965,5 @@ iframe.wait-autoplay {
 .gl-gallery .glightbox{
   margin: 0;
   padding: 0;
-  background-color: #336699;
+  background: transparent;
 }
