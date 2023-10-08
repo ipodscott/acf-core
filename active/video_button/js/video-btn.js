@@ -276,10 +276,12 @@ window.document.onkeydown = function (e) {
     }
 };
 
-// Jukebox Code
+// vid_jukebox Code
 
-var mp4Links = document.querySelectorAll(".mp4-link");
-mp4Links.forEach(function(link, index) {
+var jukebox = document.querySelector(".vid-jukebox");
+var mp4LinksInJukebox = jukebox ? jukebox.querySelectorAll(".mp4-link") : [];
+
+mp4LinksInJukebox.forEach(function(link, index) {
   link.addEventListener("click", function() {
     document.body.classList.add("stop-scroll");
 
@@ -306,9 +308,7 @@ mp4Links.forEach(function(link, index) {
     });
 
     myVideo.addEventListener("ended", function() {
-      // Check for a next video link inside the jukebox
-      var jukebox = document.querySelector(".jukebox");
-      var mp4LinksInJukebox = jukebox ? jukebox.querySelectorAll(".mp4-link") : [];
+      // Check for a next video link specifically inside the jukebox
       var nextLink = mp4LinksInJukebox[index + 1];
       
       if (nextLink) {
@@ -334,4 +334,3 @@ mp4Links.forEach(function(link, index) {
     audioFooter.classList.remove("show");
   });
 });
-
