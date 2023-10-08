@@ -1,6 +1,8 @@
 .image-vid-btn {
 	width: 100% !important;
     flex: 1 1 260px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .modal-vid{
