@@ -94,7 +94,7 @@
 
 <?php if($button_type == 'image') : ?>
 
-<div class="image-vid-btn alignfull <?php echo esc_attr($className); ?>">
+<div id="<?php echo esc_attr($id); ?>" class="image-vid-btn<?php echo esc_attr($className); ?>">
 	    <div class="image-vid-link <?php echo $vid_source; ?> <?php echo $resolution; ?>" vidurl="<?php echo $vid_origin; ?>" >
         <img decoding="async" loading="lazy" class="vid-btn-img" style="background-image: url('<?php echo $poster; ?>')"  src="<?php echo plugin_dir_url( __FILE__ ); ?>images/video_thumb.webp"/>
         <div class="vid-title">

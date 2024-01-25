@@ -13,10 +13,12 @@
 	'enqueue_style'     =>  plugin_dir_url( __FILE__ ). 'css/video-btn.css',
 	'enqueue_script'    =>  plugin_dir_url( __FILE__ ). 'js/video-btn.js', array(), '1.0', true,
 	'supports'		=> [
-		'align'			=> true,
-		'anchor'		=> true,
-		'customClassName'	=> true,
-		'mode'          => true,
+		'align' => 'full',
+		'anchor' => true,
+		'customClassName' => true,
+		'mode' => true,
+		'align_text' => true,
+		'align_content' => true,
 		]
 ));
 

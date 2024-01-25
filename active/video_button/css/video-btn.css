@@ -3,6 +3,8 @@
     flex: 1 1 260px;
     border-radius: 10px;
     overflow: hidden;
+    margin-bottom: 0 !important;
+    background-color: #336699;
 }
 
 .modal-vid{
@@ -181,7 +183,6 @@
 	width: calc(100%);
 	cursor: pointer;
 	transition: all 0.5s;
-	margin-bottom: 10px;
     cursor: pointer;
     border-radius: 10px;
     overflow: hidden;
